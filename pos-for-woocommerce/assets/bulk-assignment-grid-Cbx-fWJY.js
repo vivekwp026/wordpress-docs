@@ -1,0 +1,1 @@
+var e=`/pos-for-woocommerce/images/woocommerce-pos/bulk-assignment-grid.webp`;export{e as t};
