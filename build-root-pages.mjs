@@ -246,6 +246,7 @@ const guides = fs
         let title = slug
             .replace(/-/g, " ")
             .replace(/\b\w/g, (c) => c.toUpperCase())
+            .replace(/\bAnd\b/g, "and")
             .replace(/\bWoocommerce\b/g, "WooCommerce")
             .replace(/\bWordpress\b/g, "WordPress")
             .replace(/\bPos\b/g, "POS")

@@ -46,6 +46,7 @@ const CATEGORY = {
         "pos-globalpay-terminal-payment",
         "tranzila-payment-for-woocommerce-pos",
         "woocommerce-pos-avalara-tax",
+        "kitchen-and-customer-screen-for-restaurant-pos",
     ],
     connectors: [
         "bagisto-connector",
@@ -79,6 +80,7 @@ const titleCase = (slug) =>
     slug
         .replace(/-/g, " ")
         .replace(/\b\w/g, (c) => c.toUpperCase())
+        .replace(/\bAnd\b/g, "and")
         .replace(/\bWoocommerce\b/g, "WooCommerce")
         .replace(/\bWordpress\b/g, "WordPress")
         .replace(/\bPos\b/g, "POS")
