@@ -1,0 +1,1 @@
+var e=`/woocommerce-multi-vendor-printify-integration/assets/img/vendor-sync-settings.DjjsBPMK.webp`;export{e as t};

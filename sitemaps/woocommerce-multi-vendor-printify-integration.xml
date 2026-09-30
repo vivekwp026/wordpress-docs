@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+<url>
+  <loc>https://wpdoc.webkul.com/woocommerce-multi-vendor-printify-integration/</loc>
+  <lastmod>2026-09-30T00:00:00+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+
+<url>
+  <loc>https://wpdoc.webkul.com/woocommerce-multi-vendor-printify-integration/printify-connector/</loc>
+  <lastmod>2026-09-30T00:00:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+<url>
+  <loc>https://wpdoc.webkul.com/woocommerce-multi-vendor-printify-integration/printify-connector/overview.html</loc>
+  <lastmod>2026-09-30T00:00:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+<url>
+  <loc>https://wpdoc.webkul.com/woocommerce-multi-vendor-printify-integration/printify-connector/features.html</loc>
+  <lastmod>2026-09-30T00:00:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+<url>
+  <loc>https://wpdoc.webkul.com/woocommerce-multi-vendor-printify-integration/printify-connector/comparison.html</loc>
+  <lastmod>2026-09-30T00:00:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+<url>
+  <loc>https://wpdoc.webkul.com/woocommerce-multi-vendor-printify-integration/printify-connector/installation.html</loc>
+  <lastmod>2026-09-30T00:00:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+<url>
+  <loc>https://wpdoc.webkul.com/woocommerce-multi-vendor-printify-integration/printify-connector/get-api-token.html</loc>
+  <lastmod>2026-09-30T00:00:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+<url>
+  <loc>https://wpdoc.webkul.com/woocommerce-multi-vendor-printify-integration/printify-connector/admin-setup-wizard.html</loc>
+  <lastmod>2026-09-30T00:00:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+<url>
+  <loc>https://wpdoc.webkul.com/woocommerce-multi-vendor-printify-integration/printify-connector/vendor-setup-wizard.html</loc>
+  <lastmod>2026-09-30T00:00:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+<url>
+  <loc>https://wpdoc.webkul.com/woocommerce-multi-vendor-printify-integration/printify-connector/connection.html</loc>
+  <lastmod>2026-09-30T00:00:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+<url>
+  <loc>https://wpdoc.webkul.com/woocommerce-multi-vendor-printify-integration/printify-connector/imported-products.html</loc>
+  <lastmod>2026-09-30T00:00:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+<url>
+  <loc>https://wpdoc.webkul.com/woocommerce-multi-vendor-printify-integration/printify-connector/manage-orders.html</loc>
+  <lastmod>2026-09-30T00:00:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+<url>
+  <loc>https://wpdoc.webkul.com/woocommerce-multi-vendor-printify-integration/printify-connector/webhook-events.html</loc>
+  <lastmod>2026-09-30T00:00:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+<url>
+  <loc>https://wpdoc.webkul.com/woocommerce-multi-vendor-printify-integration/printify-connector/sync-settings.html</loc>
+  <lastmod>2026-09-30T00:00:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+<url>
+  <loc>https://wpdoc.webkul.com/woocommerce-multi-vendor-printify-integration/printify-connector/exclude-products.html</loc>
+  <lastmod>2026-09-30T00:00:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+<url>
+  <loc>https://wpdoc.webkul.com/woocommerce-multi-vendor-printify-integration/printify-connector/vendor-dashboard.html</loc>
+  <lastmod>2026-09-30T00:00:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+<url>
+  <loc>https://wpdoc.webkul.com/woocommerce-multi-vendor-printify-integration/printify-connector/faq-notes.html</loc>
+  <lastmod>2026-09-30T00:00:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+</urlset>

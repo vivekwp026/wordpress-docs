@@ -59,6 +59,7 @@ const CATEGORY = {
         "woocommerce-power-bi-connector",
         "woocommerce-icecat-connector",
         "woocommerce-aliexpress-dropship",
+        "woocommerce-multi-vendor-printify-integration",
     ],
 };
 
