@@ -1,0 +1,45 @@
+# WooCommerce Canva Connector Documentation
+
+> Official documentation for Webkul's WooCommerce Canva Connector plugin, which lets store admins design, edit and publish WooCommerce product images with Canva without ever leaving the WordPress admin.
+
+**When to use this documentation.** Use this site when you need to:
+
+- Install or update the WooCommerce Canva Connector plugin on a WordPress site (system requirements, upload, activation).
+- Configure the connector: Canva Developer Portal app, Canva Connect settings, redirect URIs and HTTPS, and building the Canva app bundle.
+- Answer how-to questions about the design workflow: opening a product in Canva, using the Canva app sidebar, searching products by name or SKU, and saving designs back to the store.
+- Understand the OAuth authorization flow between WordPress/WooCommerce and Canva.
+- Troubleshoot the Canva connection on an existing WooCommerce store using this specific Webkul plugin.
+
+Do not use this site for WooCommerce core documentation, other Canva integrations, or Webkul's Magento/Shopify products.
+
+**How to consume this site.** Every documentation page is available as raw markdown: append `.md` to the page URL (e.g. `https://wpdoc.webkul.com/woocommerce-canva-connector/documentation/installation.md`), or request any HTML URL with `Accept: text/markdown`. The full corpus in one file: [llms-full.txt](https://wpdoc.webkul.com/woocommerce-canva-connector/llms-full.txt). Machine-readable page list: [sitemap.xml](https://wpdoc.webkul.com/woocommerce-canva-connector/sitemap.xml).
+
+## Documentation
+
+- [Introduction](https://wpdoc.webkul.com/woocommerce-canva-connector/documentation/index.md): WooCommerce Canva Connector bridges your WooCommerce store and the Canva design editor. Store admins can design, edit and publish product imagery using...
+- [Features](https://wpdoc.webkul.com/woocommerce-canva-connector/documentation/features.md): WooCommerce Canva Connector turns product image creation and management into a seamless, one click experience. Design, edit, and publish high quality...
+- [Installation](https://wpdoc.webkul.com/woocommerce-canva-connector/documentation/installation.md): This guide explains how to install and activate WooCommerce Canva Connector on your WordPress site. Follow each step carefully to ensure a smooth setup.
+- [Canva Developer Portal Setup](https://wpdoc.webkul.com/woocommerce-canva-connector/documentation/canva-developer-portal.md): Connecting WooCommerce to Canva requires two separate items in the Canva Developer Portal. They are not interchangeable, and the integration only works when...
+- [Configuration: Canva Connect Settings](https://wpdoc.webkul.com/woocommerce-canva-connector/documentation/configuration-canva-connect.md): After installing the plugin, configure your Canva Developer credentials from Webkul WC Addons Canva Connect (or Settings Canva Connect ).
+- [Configuration: Redirect URIs & HTTPS](https://wpdoc.webkul.com/woocommerce-canva-connector/documentation/configuration-redirect-uris.md): The OAuth2 handshake between your store and Canva depends on two URLs being registered identically on both sides, over HTTPS .
+- [Build the Canva App](https://wpdoc.webkul.com/woocommerce-canva-connector/documentation/canva-app-build.md): The App you created in the Canva Developer Portal is an empty shell until you compile the React frontend and upload it.
+- [Design with Canva](https://wpdoc.webkul.com/woocommerce-canva-connector/documentation/design-with-canva.md): Once the plugin is configured and the Canva app is uploaded, designing a product image is a single click. This guide covers launching the Canva editor...
+- [Using the Canva App](https://wpdoc.webkul.com/woocommerce-canva-connector/documentation/canva-app-sidebar.md): The Webkul App panel is the left hand sidebar inside the Canva editor. It is a React app that talks directly to your WooCommerce store, making your live...
+- [Save to Store](https://wpdoc.webkul.com/woocommerce-canva-connector/documentation/save-to-store.md): Save Design to Store is the purple button at the bottom of every product card in the Canva sidebar. One click exports your design, sends it to WordPress...
+- ["Overview of the Setup Flow"](https://wpdoc.webkul.com/woocommerce-canva-connector/documentation/how-to-guide.md): ::: tip Seamless Design Integration When you connect WooCommerce with Canva, you aren't just creating product images; you are empowering your store with...
+- ["Installation & Basic Setup"](https://wpdoc.webkul.com/woocommerce-canva-connector/documentation/how-to-part-1.md): This guide walks you through the initial steps: system requirements, downloading, uploading, activating, and licensing the WooCommerce Canva Connector...
+- ["Canva Developer Portal & Configuration"](https://wpdoc.webkul.com/woocommerce-canva-connector/documentation/how-to-part-2.md): Follow these steps to create your Canva Developer App, generate OAuth credentials, upload the app bundle, configure WooCommerce settings, manage CORS...
+- ["Using Canva with WooCommerce"](https://wpdoc.webkul.com/woocommerce-canva-connector/documentation/how-to-part-3.md): Now that your setup is complete, follow these steps to design and update product imagery directly from WooCommerce into Canva and save them back to your store.
+- [How It Works](https://wpdoc.webkul.com/woocommerce-canva-connector/documentation/how-it-works.md): This page explains the architecture behind the integration, the OAuth2 PKCE handshake, how the design is created and sized, how the Canva app authenticates...
+- [Troubleshooting](https://wpdoc.webkul.com/woocommerce-canva-connector/documentation/troubleshooting.md): Symptoms grouped by where in the workflow they appear, each with the cause and the fix. WordPress refuses activation while WooCommerce is inactive, showing...
+- [FAQ](https://wpdoc.webkul.com/woocommerce-canva-connector/documentation/faq.md): Common questions about WooCommerce Canva Connector . Yes. Enter the Purchase Code that came with your order at Webkul WC Addons License , in the WooCommerce...
+
+## About this publisher
+
+Published by Webkul Software Private Limited, an eCommerce software company founded in 2010 and based at H-28, ARV Park, Sector 63, Noida, Uttar Pradesh 201301, India. Support: support@webkul.com, +91-9870284067, https://webkul.uvdesk.com/.
+
+## Optional
+
+- [Product page](https://store.webkul.com/woocommerce-canva-connector.html): Buy the plugin on the Webkul store.
+- [Live demo](https://wp-canva-connect.wcdemo.webkul.com/): Working demo store.
+- [Webkul support](https://webkul.uvdesk.com/): Ticket-based support for licensed users.

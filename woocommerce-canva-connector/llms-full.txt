@@ -1,0 +1,2709 @@
+# WooCommerce Canva Connector Documentation (full)
+
+> Official documentation for Webkul's WooCommerce Canva Connector plugin, which lets store admins design, edit and publish WooCommerce product images with Canva without ever leaving the WordPress admin.
+
+Canonical site: https://wpdoc.webkul.com/woocommerce-canva-connector/
+
+---
+
+<!-- source: https://wpdoc.webkul.com/woocommerce-canva-connector/ -->
+
+<div class="canva-landing-page">
+<!-- HERO SECTION -->
+<section class="canva-hero-section">
+<div class="canva-container canva-hero-grid">
+<div class="canva-hero-content">
+<div class="canva-badge-pill">
+WORDPRESS - WOOCOMMERCE CANVA CONNECTOR
+</div>
+<h1 class="canva-hero-title">
+WooCommerce <span class="canva-brand-text">Canva</span> Connector
+</h1>
+<p class="canva-hero-desc">
+Design, edit and publish WooCommerce product images in Canva, without ever leaving the WordPress admin. From installation to OAuth, the app sidebar, and saving straight back to your store.
+</p>
+<div class="canva-hero-actions">
+<a href="https://store.webkul.com/woocommerce-canva-connector.html" target="_blank" rel="noopener noreferrer" class="btn-primary">
+Buy Now
+</a>
+<a href="https://wp-canva-connect.wcdemo.webkul.com/" target="_blank" rel="noopener noreferrer" class="btn-secondary">
+View Demo
+</a>
+<a href="https://wpdoc.webkul.com/woocommerce-canva-connector/documentation/" class="btn-secondary">
+Get Started
+</a>
+</div>
+<div class="canva-hero-pills">
+<div class="pill-item">
+<span class="pill-icon pill-code">
+<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+</span>
+<span class="pill-text">No coding required</span>
+</div>
+<div class="pill-item">
+<span class="pill-icon pill-sync">
+<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.5 2v6h-6M2.5 22v-6h6M2 11.5a10 10 0 0 1 18.8-4.3M22 12.5a10 10 0 0 1-18.8 4.2"/></svg>
+</span>
+<span class="pill-text">Seamless integration</span>
+</div>
+<div class="pill-item">
+<span class="pill-icon pill-store">
+<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
+</span>
+<span class="pill-text">Save directly to your store</span>
+</div>
+</div>
+</div>
+<div class="canva-hero-visual">
+<img src="https://wpdoc.webkul.com/woocommerce-canva-connector/images/canva-connect/hero-illustration.png" alt="WooCommerce Canva Connector Hero illustration" class="hero-illustration-img" />
+</div>
+</div>
+</section>
+
+<!-- STATS / TRUST BADGES (Matching wpdoc.webkul.com) -->
+<section class="stats">
+  <a class="stat stat-card" href="https://codecanyon.net/user/webkul" target="_blank" rel="noopener">
+    <img class="badge-img" src="https://wpdoc.webkul.com/woocommerce-canva-connector/images/stats/woocommerce-featured-author.webp" alt="CodeCanyon Featured Author" />
+    <span class="badge-label">CodeCanyon<br><strong>Featured Author</strong></span>
+  </a>
+  <a class="stat stat-card" href="https://codecanyon.net/user/webkul" target="_blank" rel="noopener">
+    <img class="badge-img" src="https://wpdoc.webkul.com/woocommerce-canva-connector/images/stats/author-level-10.webp" alt="CodeCanyon Author Level 10" />
+    <span class="badge-label">CodeCanyon<br><strong>Author Level 10</strong></span>
+  </a>
+  <div class="stat stat-card">
+    <img class="badge-img" src="https://wpdoc.webkul.com/woocommerce-canva-connector/images/stats/github.webp" alt="WooCommerce Core Contributor" />
+    <span class="badge-label">WooCommerce<br><strong>Core Contributor</strong></span>
+  </div>
+  <a class="stat stat-card" href="https://www.google.com/search?q=webkul" target="_blank" rel="noopener">
+    <svg class="badge-img g-logo" viewBox="0 0 48 48" aria-hidden="true">
+      <path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/>
+      <path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/>
+      <path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.79l7.97-6.2z"/>
+      <path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/>
+    </svg>
+    <span class="badge-label"><span class="g-rating">4.5</span> <span class="stars">★★★★★</span><br><strong>Google Review</strong></span>
+  </a>
+</section>
+
+<!-- MIDDLE SECTION: 3-STEP CANVA CONNECTOR GUIDES (BG #f5f5f5, matching screenshot 3) -->
+<section class="canva-guides-section">
+<div class="canva-container">
+<div class="canva-section-header">
+<h2 class="canva-section-title">WooCommerce Canva Connector Guides</h2>
+<p class="canva-section-subtitle">
+Find setup, configuration, customization and usage documentation for WooCommerce Canva Connector in one place.
+</p>
+</div>
+<div class="guide-steps-grid">
+<!-- STEP 1 -->
+<div class="guide-step-card">
+<div class="guide-step-header">
+<span class="guide-step-num">1</span>
+<h3 class="guide-step-title">Set up</h3>
+</div>
+<p class="guide-step-desc">
+Install the plugin and configure your WooCommerce store foundation.
+</p>
+<div class="guide-step-links">
+<a href="https://wpdoc.webkul.com/woocommerce-canva-connector/documentation/" class="guide-link-item">
+<span>Introduction</span>
+<span class="guide-link-arrow">›</span>
+</a>
+<a href="https://wpdoc.webkul.com/woocommerce-canva-connector/documentation/features.html" class="guide-link-item">
+<span>Features</span>
+<span class="guide-link-arrow">›</span>
+</a>
+<a href="https://wpdoc.webkul.com/woocommerce-canva-connector/documentation/installation.html" class="guide-link-item">
+<span>Installation</span>
+<span class="guide-link-arrow">›</span>
+</a>
+<a href="https://wpdoc.webkul.com/woocommerce-canva-connector/documentation/configuration-canva-connect.html" class="guide-link-item">
+<span>General settings</span>
+<span class="guide-link-arrow">›</span>
+</a>
+<a href="https://wpdoc.webkul.com/woocommerce-canva-connector/documentation/how-to-guide.html" class="guide-link-item">
+<span>How to Guide</span>
+<span class="guide-link-arrow">›</span>
+</a>
+</div>
+</div>
+
+<!-- STEP 2 -->
+<div class="guide-step-card">
+<div class="guide-step-header">
+<span class="guide-step-num">2</span>
+<h3 class="guide-step-title">Configure Canva App</h3>
+</div>
+<p class="guide-step-desc">
+Set up OAuth credentials, redirect URIs, and build the Canva app extension.
+</p>
+<div class="guide-step-links">
+<a href="https://wpdoc.webkul.com/woocommerce-canva-connector/documentation/canva-developer-portal.html" class="guide-link-item">
+<span>Canva Developer Portal</span>
+<span class="guide-link-arrow">›</span>
+</a>
+<a href="https://wpdoc.webkul.com/woocommerce-canva-connector/documentation/configuration-redirect-uris.html" class="guide-link-item">
+<span>Redirect URIs &amp; HTTPS</span>
+<span class="guide-link-arrow">›</span>
+</a>
+<a href="https://wpdoc.webkul.com/woocommerce-canva-connector/documentation/canva-app-build.html" class="guide-link-item">
+<span>Build Canva App Bundle</span>
+<span class="guide-link-arrow">›</span>
+</a>
+<a href="https://wpdoc.webkul.com/woocommerce-canva-connector/documentation/how-to-part-2.html" class="guide-link-item">
+<span>Upload Bundle to Canva</span>
+<span class="guide-link-arrow">›</span>
+</a>
+<a href="https://wpdoc.webkul.com/woocommerce-canva-connector/documentation/how-it-works.html" class="guide-link-item">
+<span>OAuth Authorization</span>
+<span class="guide-link-arrow">›</span>
+</a>
+</div>
+</div>
+
+<!-- STEP 3 -->
+<div class="guide-step-card">
+<div class="guide-step-header">
+<span class="guide-step-num">3</span>
+<h3 class="guide-step-title">Design &amp; Sync</h3>
+</div>
+<p class="guide-step-desc">
+Open products in Canva, edit media seamlessly, and save back to store.
+</p>
+<div class="guide-step-links">
+<a href="https://wpdoc.webkul.com/woocommerce-canva-connector/documentation/canva-app-sidebar.html" class="guide-link-item">
+<span>Using Canva App Sidebar</span>
+<span class="guide-link-arrow">›</span>
+</a>
+<a href="https://wpdoc.webkul.com/woocommerce-canva-connector/documentation/design-with-canva.html" class="guide-link-item">
+<span>Design Editor Workflow</span>
+<span class="guide-link-arrow">›</span>
+</a>
+<a href="https://wpdoc.webkul.com/woocommerce-canva-connector/documentation/save-to-store.html" class="guide-link-item">
+<span>Save to Store Gallery</span>
+<span class="guide-link-arrow">›</span>
+</a>
+<a href="https://wpdoc.webkul.com/woocommerce-canva-connector/documentation/troubleshooting.html" class="guide-link-item">
+<span>Troubleshooting</span>
+<span class="guide-link-arrow">›</span>
+</a>
+<a href="https://wpdoc.webkul.com/woocommerce-canva-connector/documentation/faq.html" class="guide-link-item">
+<span>Frequently Asked Questions</span>
+<span class="guide-link-arrow">›</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- KEY FEATURES SECTION (Matching Screenshot) -->
+<section class="canva-section canva-key-features">
+<div class="canva-container">
+<div class="canva-section-header">
+<div class="key-features-tag-pill">
+KEY FEATURES
+</div>
+<h2 class="canva-section-title">
+Everything You Need to Connect WooCommerce &amp; <span class="canva-brand-text">Canva</span>
+</h2>
+</div>
+
+<div class="key-features-layout">
+<!-- LEFT COLUMN FEATURES -->
+<div class="kf-col kf-col-left">
+  <!-- Feature 1: Design in Canva -->
+  <div class="kf-item">
+    <div class="kf-icon-box">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.4 7.2L22 12l-7.6 2.8L12 22l-2.4-7.2L2 12l7.6-2.8L12 2z"></path></svg>
+    </div>
+    <div class="kf-content">
+      <h3 class="kf-title">Design in Canva</h3>
+      <p class="kf-desc">Add design buttons to product edit pages.</p>
+    </div>
+  </div>
+
+  <!-- Feature 2: Auto Canvas Matching -->
+  <div class="kf-item">
+    <div class="kf-icon-box">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"></path></svg>
+    </div>
+    <div class="kf-content">
+      <h3 class="kf-title">Auto Canvas Matching</h3>
+      <p class="kf-desc">Match canvas dimensions to product image sizes.</p>
+    </div>
+  </div>
+
+  <!-- Feature 3: Product SKU Search -->
+  <div class="kf-item">
+    <div class="kf-icon-box">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+    </div>
+    <div class="kf-content">
+      <h3 class="kf-title">Product SKU Search</h3>
+      <p class="kf-desc">Search store products by name or SKU inside Canva.</p>
+    </div>
+  </div>
+</div>
+
+<!-- CENTER ILLUSTRATION -->
+<div class="kf-col-center">
+  <img src="https://wpdoc.webkul.com/woocommerce-canva-connector/images/canva-connect/key-features-illustration.png" alt="WooCommerce and Canva Connection" class="kf-center-img" />
+</div>
+
+<!-- RIGHT COLUMN FEATURES -->
+<div class="kf-col kf-col-right">
+  <!-- Feature 4: Direct Media Sync -->
+  <div class="kf-item">
+    <div class="kf-icon-box">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg>
+    </div>
+    <div class="kf-content">
+      <h3 class="kf-title">Direct Media Sync</h3>
+      <p class="kf-desc">Save Canva designs to WordPress Media Library.</p>
+    </div>
+  </div>
+
+  <!-- Feature 5: Featured Image Update -->
+  <div class="kf-item">
+    <div class="kf-icon-box">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 11 12 14 22 4"></polyline><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path></svg>
+    </div>
+    <div class="kf-content">
+      <h3 class="kf-title">Featured Image Update</h3>
+      <p class="kf-desc">Set exported Canva designs as featured images.</p>
+    </div>
+  </div>
+
+  <!-- Feature 6: Easy OAuth Setup -->
+  <div class="kf-item">
+    <div class="kf-icon-box">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+    </div>
+    <div class="kf-content">
+      <h3 class="kf-title">Easy OAuth Setup</h3>
+      <p class="kf-desc">Manage Canva App ID and client details in WordPress.</p>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- HOW IT WORKS SECTION (Matching Screenshot 1) -->
+<section class="canva-section canva-how-it-works">
+<div class="canva-container">
+<div class="canva-section-header">
+<h2 class="canva-section-title">How it works</h2>
+<p class="canva-section-subtitle">
+Get started in minutes and start designing beautiful product images with Canva, right from your WordPress admin.
+</p>
+</div>
+
+<!-- TOP STEPPER PROGRESS BAR (01 - 02 - 03 - 04) -->
+<div class="stepper-timeline-bar">
+<div class="timeline-line"></div>
+<div class="timeline-step">
+<div class="timeline-step-circle">01</div>
+</div>
+<div class="timeline-step">
+<div class="timeline-step-circle">02</div>
+</div>
+<div class="timeline-step">
+<div class="timeline-step-circle">03</div>
+</div>
+<div class="timeline-step">
+<div class="timeline-step-circle">04</div>
+</div>
+</div>
+
+<!-- 4 STEP CARDS FLOW -->
+<div class="canva-steps-flow">
+<!-- CARD 1 -->
+<div class="canva-step-card">
+<div class="step-card-header">
+<div class="step-icon-box">
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="12" y1="18" x2="12" y2="12"></line><line x1="9" y1="15" x2="15" y2="15"></line></svg>
+</div>
+<span class="step-watermark-num">01</span>
+</div>
+<h3 class="step-title">Install &amp; Activate</h3>
+<p class="step-desc">Install the plugin from your WordPress site and activate it in just a few clicks.</p>
+</div>
+
+<!-- CARD 2 -->
+<div class="canva-step-card">
+<div class="step-card-header">
+<div class="step-icon-box">
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg>
+</div>
+<span class="step-watermark-num">02</span>
+</div>
+<h3 class="step-title">Connect Canva Account</h3>
+<p class="step-desc">Create your Canva app in Canva Developer Portal and connect it through a secure OAuth connection.</p>
+</div>
+
+<!-- CARD 3 -->
+<div class="canva-step-card">
+<div class="step-card-header">
+<div class="step-icon-box">
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg>
+</div>
+<span class="step-watermark-num">03</span>
+</div>
+<h3 class="step-title">Design in Canva</h3>
+<p class="step-desc">Open the product in Canva from the app sidebar and create stunning visuals.</p>
+</div>
+
+<!-- CARD 4 -->
+<div class="canva-step-card">
+<div class="step-card-header">
+<div class="step-icon-box">
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+</div>
+<span class="step-watermark-num">04</span>
+</div>
+<h3 class="step-title">Save to Store</h3>
+<p class="step-desc">Publish your design and save it directly back to your WooCommerce store.</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- WHY CHOOSE CANVA CONNECT -->
+<section class="canva-section canva-why-choose">
+<div class="canva-container">
+<div class="canva-section-header">
+<h2 class="canva-section-title">Why Choose Canva Connect?</h2>
+<p class="canva-section-subtitle">
+Bring your creativity and eCommerce together. Create professional, eye-catching product images without switching between tools.
+</p>
+</div>
+<div class="canva-features-grid">
+<div class="canva-feature-card">
+<div class="feature-icon-box icon-clock">
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+</div>
+<div class="feature-body">
+<h3 class="feature-title">Save Time</h3>
+<p class="feature-desc">Design and publish in minutes without leaving your WordPress admin.</p>
+</div>
+</div>
+
+<div class="canva-feature-card">
+<div class="feature-icon-box icon-palette">
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 1 0 10 10 3.5 3.5 0 0 0-3.5-3.5h-1.8a1.7 1.7 0 0 1-1.7-1.7V6A4 4 0 0 0 12 2z"></path><circle cx="7.5" cy="10.5" r="1.5" fill="currentColor"></circle><circle cx="12" cy="7.5" r="1.5" fill="currentColor"></circle><circle cx="16.5" cy="10.5" r="1.5" fill="currentColor"></circle></svg>
+</div>
+<div class="feature-body">
+<h3 class="feature-title">No Design Skills Needed</h3>
+<p class="feature-desc">Use Canva's easy drag-and-drop editor to create stunning visuals.</p>
+</div>
+</div>
+
+<div class="canva-feature-card">
+<div class="feature-icon-box icon-sync">
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 4 23 10 17 10"></polyline><polyline points="1 20 1 14 7 14"></polyline><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"></path></svg>
+</div>
+<div class="feature-body">
+<h3 class="feature-title">Real Integration</h3>
+<p class="feature-desc">Works smoothly with WooCommerce for a hassle-free experience.</p>
+</div>
+</div>
+
+<div class="canva-feature-card">
+<div class="feature-icon-box icon-device">
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2" width="16" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></svg>
+</div>
+<div class="feature-body">
+<h3 class="feature-title">Responsive Designs</h3>
+<p class="feature-desc">Create images that look great on all devices and screen sizes.</p>
+</div>
+</div>
+
+<div class="canva-feature-card">
+<div class="feature-icon-box icon-growth">
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline></svg>
+</div>
+<div class="feature-body">
+<h3 class="feature-title">Boost Conversion</h3>
+<p class="feature-desc">Professional product images help you attract more customers and increase sales.</p>
+</div>
+</div>
+
+<div class="canva-feature-card">
+<div class="feature-icon-box icon-sparkle">
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.4 7.2L22 12l-7.6 2.8L12 22l-2.4-7.2L2 12l7.6-2.8L12 2z"></path></svg>
+</div>
+<div class="feature-body">
+<h3 class="feature-title">Easy to Use</h3>
+<p class="feature-desc">Simple setup, clear steps, and full support whenever you need it.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- BOTTOM CTA CARD -->
+<section class="canva-section canva-bottom-cta">
+<div class="canva-container">
+<div class="canva-cta-banner">
+<div class="cta-banner-content">
+<h2 class="cta-banner-title">Start Creating Stunning<br>Product Images Today</h2>
+<p class="cta-banner-desc">
+Transform your WooCommerce products with professional designs, powered by Canva, and built for your store.
+</p>
+<div class="cta-banner-actions">
+<a href="https://wpdoc.webkul.com/woocommerce-canva-connector/documentation/" class="btn-primary">
+Get Started
+</a>
+<a href="https://wp-canva-connect.wcdemo.webkul.com/" target="_blank" rel="noopener noreferrer" class="btn-secondary">
+View Demo
+</a>
+</div>
+</div>
+<div class="cta-banner-visual">
+<img src="https://wpdoc.webkul.com/woocommerce-canva-connector/images/canva-connect/cta-illustration.png" alt="Canva integration design editor preview" class="cta-banner-img" />
+</div>
+</div>
+</div>
+</section>
+
+<!-- BOTTOM FOOTER (Matching Screenshot 4 & wpdoc.webkul.com) -->
+<footer class="site-footer">
+  <div class="canva-container footer-inner">
+    <p class="footer-copy">&copy; Copyright 2010-2026</p>
+    <nav class="footer-nav" aria-label="Footer links">
+      <a href="https://webkul.com/about-us/" target="_blank" rel="noopener noreferrer">About</a>
+      <a href="https://webkul.com/contacts/" target="_blank" rel="noopener noreferrer">Contact</a>
+      <a href="https://webkul.com/privacy-policy/" target="_blank" rel="noopener noreferrer">Privacy</a>
+      <a href="https://webkul.com/" target="_blank" rel="noopener noreferrer">Company</a>
+      <a href="https://store.webkul.com/woocommerce-plugins.html" target="_blank" rel="noopener noreferrer">Plugin Store</a>
+      <a href="https://webkul.uvdesk.com/" target="_blank" rel="noopener noreferrer">Get Support</a>
+    </nav>
+  </div>
+</footer>
+</div>
+
+---
+
+<!-- source: https://wpdoc.webkul.com/woocommerce-canva-connector/documentation/ -->
+
+# Introduction
+
+WooCommerce Canva Connector bridges your WooCommerce store and the Canva design editor. Store admins can design, edit and publish product imagery using Canva's editor without ever leaving the e-commerce workflow.
+
+<a class="doc-image-link" href="./assets/products-list-design-with-canva.webp"><img src="./assets/products-list-design-with-canva.webp" alt="WooCommerce Canva Connector - Products List Integration" /></a>
+
+The plugin eliminates the tedious repetitive loop that usually surrounds every product image change:
+
+> download the image → open external editor → design & export → re-upload to WordPress → re-attach as product featured image.
+
+Instead, a **Design with Canva** button on the product edit page (and products list) opens a correctly sized Canva canvas, and a **Save Design to Store** button in the Canva sidebar pushes the finished artwork straight back into the WordPress Media Library as that product's featured image.
+
+---
+
+## What does this plugin do?
+
+The integration is made of two halves that communicate seamlessly via secure REST APIs:
+
+| Component                | What it is                              | Where it runs           |
+|--------------------------|-----------------------------------------|-------------------------|
+| **`wp-canva-connect`**   | A WordPress / WooCommerce plugin        | Your WordPress store    |
+| **`canva-app-frontend`** | A Canva App built in React + TypeScript | Inside the Canva editor |
+
+The WordPress plugin manages the OAuth2 PKCE handshake, canvas dimension resolution, and automated image sideloading. The Canva app powers the in-editor sidebar: product search, variation selection, live data insertion, and direct design export back to your store.
+
+---
+
+## Admin Capabilities
+
+Once configured, an admin (or any user with the `manage_woocommerce` and `edit_products` capabilities) can:
+
+- Launch Canva from **any product edit page** via the *Design with Canva* meta box
+- Launch Canva directly from the **products list table** via the *Design with Canva* row action
+- Open a canvas that **automatically matches the product's image dimensions**
+- Have the **existing featured image pre-uploaded** into the design as a Canva asset
+- **Re-open previous designs** later instead of starting from scratch
+- **Search the whole store catalog** from inside the Canva sidebar
+- Insert a product's **name, price, SKU, or description** as live text layers
+- **Replace any image** on the canvas with any catalog or gallery image in one click
+- **Save designs back** to any product, including a specific variation
+
+---
+
+## Key Capabilities at a Glance
+
+- **One-Click Canva Integration**: Direct button injection into product edit pages and products list table rows.
+- **Dynamic Dimension Matching**: Automatically reads original image dimensions or theme sizes to provision a perfectly sized canvas without distortion.
+- **Automated Sideloading**: Finished designs are sent to WordPress, sideloaded into the Media Library, and attached as the featured image automatically.
+- **In-Editor Product Search**: Browse and search your entire WooCommerce catalog from within the Canva sidebar.
+- **Enterprise Security**: OAuth 2.0 with PKCE for store authentication, and cryptographic RS256 JWT validation for all app requests.
+
+<a class="doc-image-link" href="./assets/canva-connect-settings.webp"><img src="./assets/canva-connect-settings.webp" alt="Canva Connect Settings screen in the WordPress admin" /></a>
+
+---
+
+## Requirements
+
+> ⚠ **Your store must be served over HTTPS.** Canva strictly rejects OAuth redirects to plain HTTP URLs, and the Canva app cannot communicate with an insecure origin from its iframe.
+
+| Requirement         | Minimum / Recommended Version            |
+|---------------------|------------------------------------------|
+| WordPress Version   | 6.7 or higher (tested up to 6.9)         |
+| WooCommerce Version | 10.0 or higher (tested up to 10.4)       |
+| PHP Version         | 7.4+ (tested up to 8.4)                  |
+| Node.js             | 18.x or 20.10.x (to build the Canva app) |
+| npm                 | 9 or 10                                  |
+| SSL                 | **Required**, Canva rejects plain HTTP   |
+| Canva account       | A Canva Developer account                |
+
+WooCommerce must be **installed and active** before this plugin can be activated. The plugin declares `Requires Plugins: woocommerce` and guards its activation hook.
+
+The plugin also fully declares compatibility with WooCommerce **High-Performance Order Storage (HPOS)**.
+
+---
+
+## Documentation Navigation
+
+1. [Features](https://wpdoc.webkul.com/woocommerce-canva-connector/documentation/features.html) - The complete capability list.
+2. [Installation](https://wpdoc.webkul.com/woocommerce-canva-connector/documentation/installation.html) - Install the plugin and activate its license.
+3. [Canva Developer Portal](https://wpdoc.webkul.com/woocommerce-canva-connector/documentation/canva-developer-portal.html) - Create the App and Integration credentials.
+4. [Canva Connect Settings](https://wpdoc.webkul.com/woocommerce-canva-connector/documentation/configuration-canva-connect.html) - Configure App ID, Client ID, and Client Secret.
+5. [Redirect URIs & HTTPS](https://wpdoc.webkul.com/woocommerce-canva-connector/documentation/configuration-redirect-uris.html) - Complete the secure handshake.
+6. [Build the Canva App](https://wpdoc.webkul.com/woocommerce-canva-connector/documentation/canva-app-build.html) - Compile and upload the React frontend bundle.
+7. [Design with Canva](https://wpdoc.webkul.com/woocommerce-canva-connector/documentation/design-with-canva.html) - Day-to-day design and publishing workflow.
+8. [Using the Canva App](https://wpdoc.webkul.com/woocommerce-canva-connector/documentation/canva-app-sidebar.html) - Working inside the Canva editor sidebar.
+9. [Save to Store](https://wpdoc.webkul.com/woocommerce-canva-connector/documentation/save-to-store.html) - Exporting and sideloading imagery.
+10. [Step-by-Step Guide](https://wpdoc.webkul.com/woocommerce-canva-connector/documentation/how-to-guide.html) - End-to-end walkthrough.
+
+---
+
+## Plugin Demo
+
+Want to see the integration before installing it? The demo store has the plugin configured end to end:
+
+- The **Design with Canva** meta box on the product edit page
+- The **Design with Canva** row action on the products list
+- The Canva Connect settings screen
+- The in-editor sidebar, product search, and **Save Design to Store**
+
+[🔗 **Live Demo**](https://wp-canva-connect.wcdemo.webkul.com/)
+[🔗 **Buy Now**](https://store.webkul.com/woocommerce-canva-connector.html)
+
+---
+
+## Support Information
+
+If you have any questions or need custom modifications, raise a support ticket:
+
+🎟 **Support Portal:** [https://webkul.uvdesk.com](https://webkul.uvdesk.com)  
+📧 **Email:** [support@webkul.com](mailto:support@webkul.com)
+
+---
+
+<!-- source: https://wpdoc.webkul.com/woocommerce-canva-connector/documentation/features.html -->
+
+# Features
+
+**WooCommerce Canva Connector** turns product image creation and management into a seamless, one-click experience. Design, edit, and publish high-quality product visuals in Canva directly from your WooCommerce workflow.
+
+<a class="doc-image-link" href="./assets/canva-app-current-product.webp"><img src="./assets/canva-app-current-product.webp" alt="Canva Connect key features in action" /></a>
+
+Below is the complete feature list, capabilities, and architectural breakdown.
+
+---
+
+## Core Features & Highlights
+
+- **Design WooCommerce Product Images in Canva:** Create, customize, and edit professional product visuals directly inside the Canva editor.
+- **One-Click Launch from WordPress Admin:** Add a **Design with Canva** button to WooCommerce product edit pages and products list table row actions.
+- **Dynamic Dimension Matching:** Automatically creates canvas dimensions matching your product featured image, theme image settings (`woocommerce_single`), or standard 1080×1080 canvas without image distortion.
+- **Existing Image Pre-Upload:** Automatically loads the current product featured image into the Canva workspace as an editable asset.
+- **In-Editor WooCommerce Product Search:** Search your store's published catalog by product name or SKU directly within the Canva app sidebar.
+- **Variation & Grouped Product Awareness:** Select specific product variations or grouped children to tailor visuals specifically for variations.
+- **Add Live Product Data as Text:** Insert real-time product names, formatted prices, SKUs, and descriptions onto the canvas with a single click.
+- **Click-to-Replace Image Swapping:** Select any image frame on the canvas and click any catalog thumbnail to instantly replace it with high-resolution imagery.
+- **One-Click Save Design to Store:** Export finished designs and sideload them directly into the WordPress Media Library without manual downloading and re-uploading.
+- **Design Re-Opening & History:** Stores design IDs (`_canva_design_id`) so admins can reopen and continue editing previous artwork at any time.
+- **Enterprise-Grade Security:** Full OAuth 2.0 PKCE handshake, silent background token refresh, and cryptographic RS256 JWT verification.
+- **HPOS Compatible:** Built and verified for WooCommerce High-Performance Order Storage (HPOS).
+- **Translation Ready:** Fully translatable (i18n) via the standard `wkwc-canva-connect` text domain.
+
+---
+
+## WordPress & WooCommerce Features
+
+### One-Click Canva Integration
+
+A dedicated **Design with Canva** meta box is added to the sidebar of every product edit screen (and standard post edit screens). The same action is also added into the products list table as a row action between *View* and *Duplicate*, allowing you to launch design workflows without opening the product first.
+
+Every request is protected with nonce verification and requires the **`edit_products`** capability, preventing unauthorized access.
+
+### Dynamic Dimension Matching
+
+Nothing gets distorted or cropped. Before the canvas is created, the connector resolves the target dimensions in this exact order:
+
+1. The **full-size dimensions of the product's current featured image**.
+2. The **`woocommerce_single` image size** defined by your active WooCommerce theme.
+3. **1080 × 1080 px** as the standard high-resolution fallback.
+
+### Existing Image Pre-Upload
+
+If the product already has a featured image, the connector uploads that file to Canva as an asset first (`/v1/asset-uploads`), polls the upload job until it succeeds, and places it directly onto the new canvas.
+
+### Design Re-Opening
+
+The created design ID is stored in the product's `_canva_design_id` post meta. Whenever you click *Design with Canva* again, the connector looks up the design and reopens it instead of creating a blank canvas, ensuring work is never lost.
+
+### Automated Image Sideloading
+
+When saving a design from Canva, exported images are sent to your store, processed through WordPress's `media_handle_sideload()`, and attached directly as the product's **featured image** (`set_post_thumbnail()`) or variation image.
+
+---
+
+## Canva App Sidebar Features
+
+### In-Editor Product Search
+
+<a class="doc-image-link" href="./assets/canva-app-product-search.webp"><img src="./assets/canva-app-product-search.webp" alt="Searching WooCommerce products from the Canva sidebar" /></a>
+
+A dedicated search bar queries your store's live catalog by **product title or SKU** with real-time 500 ms debouncing, returning up to 50 published items. Purely numeric queries automatically check for specific product IDs.
+
+### Current Product Context
+
+The app detects which product design is active and pins that product to the top of the sidebar under **✨ Current Product** with distinct visual highlighting.
+
+### Click-to-Replace Images
+
+Select an image frame on your Canva canvas, then click any product or gallery thumbnail in the sidebar. The connector transfers the high-res image data and swaps it into the selected frame instantly.
+
+### Live Product Text Insertion
+
+- **Add Name**: Inserts the product name (or variation name) onto the canvas.
+- **Add Price**: Inserts formatted product price.
+- **Add Description**: Inserts product short description or full description.
+
+### Variation Support
+
+For variable products, a **Select Variation** dropdown switches the displayed name, price, SKU, and description, and retargets *Save Design to Store* directly at that specific variation ID.
+
+### One-Click Save to Store
+
+<a class="doc-image-link" href="./assets/canva-app-save-design-to-store.webp"><img src="./assets/canva-app-save-design-to-store.webp" alt="Save Design to Store buttons in the Canva sidebar" /></a>
+
+One click exports your design in high quality (`PNG`, `JPG`, or `GIF`), transmits the file to your WordPress store, and gives real-time visual feedback (*Saving…*, *✅ Saved!*, or *❌ Failed to Save!*).
+
+---
+
+## Security & Architecture
+
+| Security Layer          | Implementation Details                                                         |
+|-------------------------|--------------------------------------------------------------------------------|
+| Store → Canva Auth      | **OAuth 2.0 Authorization Code with PKCE** (`S256` code challenge)             |
+| CSRF Protection         | WordPress `wp_rest` nonce verification + `edit_products` capability check       |
+| Replay Protection       | Single-use opaque `state` parameter cached server-side in transients           |
+| Canva App → Store Auth  | **RS256 JWT validation** verified against Canva's public JWKS keysets          |
+| App ID Verification     | JWT `aud` claim verified against stored **App ID**                             |
+| Safe Redirects          | `wp_safe_redirect()` strictly allow-listing `canva.com`                        |
+| Sanitization            | All input fields sanitized before database update                              |
+
+---
+
+## Feature Comparison & Summary
+
+| Feature                    | Description                                                                     |
+|----------------------------|---------------------------------------------------------------------------------|
+| Design with Canva button   | Integrated on product edit pages, post edit pages, and products list table rows |
+| Dynamic dimension matching | Auto-sized to featured image dimensions, theme single image size, or 1080×1080  |
+| Asset pre-upload           | Current featured image automatically placed on the canvas                       |
+| Design re-opening          | Persistent `_canva_design_id` reopens previous artwork for continuous iteration |
+| Silent token refresh       | One-time consent approval with automatic background token renewals              |
+| Live product search        | Fast search by title or SKU with 500 ms debouncing                              |
+| Product context            | Current product pinned and highlighted at the top of the sidebar               |
+| Click-to-replace           | One-click replacement of selected canvas frames with catalog images             |
+| Text insertion             | Instant insertion of product title, price, and description text layers          |
+| Variation support          | Manage visuals for parent products, variations, and grouped child items         |
+| CORS control               | Scoped specifically to `canva/v1` routes with optional server disable toggle    |
+| HPOS compatibility         | Fully compatible with WooCommerce High-Performance Order Storage                |
+| Internationalization       | Ready for localization via `wkwc-canva-connect` text domain                     |
+
+---
+
+<!-- source: https://wpdoc.webkul.com/woocommerce-canva-connector/documentation/installation.html -->
+
+# Installation
+
+This guide explains how to install and activate **WooCommerce Canva Connector** on your WordPress site.
+
+Follow each step carefully to ensure a smooth setup.
+
+---
+
+## System Requirements
+
+Before installation, make sure:
+
+| Requirement         | Minimum / Recommended Version                     |
+|---------------------|---------------------------------------------------|
+| WordPress Version   | 6.7 or higher (tested up to 6.9)                  |
+| WooCommerce Version | 10.0 or higher (tested up to 10.4)                |
+| PHP Version         | 7.4+ (tested up to 8.4)                           |
+| Memory Limit        | 256MB or higher                                   |
+| SSL                 | **Required**, Canva rejects plain HTTP redirects |
+| Composer            | Needed only for a Git checkout                    |
+
+> ⚠ **WooCommerce is mandatory.** The plugin ships with the `Requires Plugins: woocommerce` header and also guards its own activation hook, so WordPress refuses to activate it while WooCommerce is inactive. Install and activate WooCommerce first.
+
+---
+
+## Step 1: Download Plugin
+
+After purchase, you will receive a **ZIP file** of the plugin.
+
+Do NOT unzip the file before uploading.
+
+---
+
+## Step 2: Upload Plugin
+
+1. Login to your **WordPress Admin Panel**
+2. Navigate to: **Plugins > Add Plugin**
+3. Click **Upload Plugin** (top of page)
+4. Click **Choose File**
+5. Select the downloaded ZIP file
+
+<a class="doc-image-link" href="./assets/plugin-upload.webp"><img src="./assets/plugin-upload.webp" alt="Plugins > Add Plugin > Upload Plugin screen in the WordPress admin" /></a>
+
+> 💡 On WordPress 6.5 and later the menu item reads **Add Plugin**; older releases label it **Add New**. Both open the same screen.
+
+---
+
+## Step 3: Install Plugin
+
+Click the **Install Now** button.
+
+WordPress will upload and install the plugin automatically.
+
+---
+
+## Step 4: Activate Plugin
+
+Once installed:
+
+- You will see **Plugin installed successfully**
+- Click **Activate Plugin**
+
+You can confirm the result at any time from **Plugins > Installed Plugins**, where *WooCommerce Canva Connector* appears alongside WooCommerce:
+
+<a class="doc-image-link" href="./assets/plugins-installed.webp"><img src="./assets/plugins-installed.webp" alt="WooCommerce Canva Connector active on the Installed Plugins screen" /></a>
+
+If WooCommerce is not active, activation is blocked with the message *"Webkul Canva Connect for Woocommerce needs WooCommerce. Activate WooCommerce first, then activate this plugin."*
+
+---
+
+
+## Step 5: Activate the License
+
+Activation is done from the shared Webkul licensing screen:
+
+1. Go to **Webkul WC Addons > License**.
+2. Find the **WooCommerce Canva Connector** row in the **Module License** table.
+3. Enter the **Purchase Code** you received with your order and submit it.
+4. The **Status** column turns **Approved**, and **Support Till** shows your support expiry date.
+
+<a class="doc-image-link" href="./assets/webkul-wc-addons-license.webp"><img src="./assets/webkul-wc-addons-license.webp" alt="Module License table under Webkul WC Addons > License, showing Canva Connect approved" /></a>
+
+The table lists, for every installed Webkul add-on: **Plugin**, **Version**, **Purchase From**, **Purchase Code**, **Support Till** and **Status**.
+
+> ⚠ The screen warns that *all active modules must be activated with valid purchase codes. If any module remains unactivated, customers will be unable to complete the checkout process, and a mandatory activation notice will be displayed in the website footer.* Activate the license before going live.
+
+- **[License Activation Guide](https://wpdoc.webkul.com/license-validator/)**: step-by-step instructions for activating a Webkul plugin licence.
+
+---
+
+## Step 6: Locate the Settings Page
+
+After activation, navigate to the Canva Connect settings page in your WordPress Admin sidebar:
+
+**Webkul WC Addons > Canva Connect** (or **Settings > Canva Connect**)
+
+<a class="doc-image-link" href="./assets/canva-connect-admin-settings.png"><img src="./assets/canva-connect-admin-settings.png" alt="Canva Connect Settings Page in WordPress Admin" /></a>
+
+### Settings Configuration Fields
+
+The settings screen displays the following configuration fields and API endpoints:
+
+| Field / Setting | Type | Description |
+|-----------------|------|-------------|
+| **App ID** | Text Input | The Canva Application ID (e.g., `AAHOGOJacpE`) from the Canva Developer Portal. |
+| **Client ID** | Text Input | The OAuth2 Client ID (e.g., `OC-...`) generated in your Canva integration. |
+| **Client Secret** | Password Input | The secure Client Secret key paired with your Client ID. |
+| **Disable CORS Headers** | Checkbox | Check this box if your web server or CDN already manages CORS headers to prevent duplicate header conflicts. |
+| **Redirect URI** | Read-only URL | `https://your-domain.com/wp-json/canva/v1/auth/callback` — Copy this exact URL and register it in your Canva Developer Portal redirect configuration. |
+| **Return URL** | Read-only URL | `https://your-domain.com/wp-json/canva/v1/editor/return` — The callback endpoint used by Canva after design creation. |
+
+> 💡 **Tip:** Save your settings by clicking the **Save Changes** button at the bottom after entering your credentials.
+
+---
+
+## Step 7: Verify the REST Routes
+
+The plugin registers its endpoints in the `canva/v1` REST namespace. Confirm they are live before configuring Canva:
+
+```bash
+curl -I https://your-domain.com/wp-json/canva/v1/products
+```
+
+A **401** response is the expected, healthy answer, it means the route exists and is correctly demanding a bearer token. A **404** means permalinks need flushing.
+
+---
+
+## Step 8: Update Permalinks
+
+This step is **mandatory** if you saw a 404 above.
+
+- Go to **Settings > Permalinks**.
+- Set **Post Name** as the permalink structure.
+- Click **Save Changes**, this flushes the rewrite rules and registers the REST routes.
+
+<a class="doc-image-link" href="./assets/permalinks.webp"><img src="./assets/permalinks.webp" alt="Settings > Permalinks with the Post name structure selected" /></a>
+
+---
+
+## Step 9: Confirm the Button Is Live
+
+Open any product from **Products > All Products**. The **Design with Canva** meta box should now be present in the right-hand column:
+
+<a class="doc-image-link" href="./assets/design-with-canva-metabox.webp"><img src="./assets/design-with-canva-metabox.webp" alt="The Design with Canva meta box on a product edit screen" /></a>
+
+The button will not reach Canva yet, it needs the credentials configured in the next two chapters, but seeing the box confirms the plugin is installed and running.
+
+---
+
+## Notes
+
+- Always ensure the plugin ZIP is compatible with your WooCommerce version.
+- The plugin declares WooCommerce **HPOS** compatibility, so no incompatibility warning appears.
+- The `wp-content/uploads` directory must be **writable by the web server**, otherwise designs saved from Canva cannot be sideloaded into the Media Library.
+- Installation is only half the job, the plugin does nothing until the [Canva Developer Portal](https://wpdoc.webkul.com/woocommerce-canva-connector/documentation/canva-developer-portal.html) credentials are in place.
+
+### Admin menu and role changes
+
+Activating the plugin also makes two changes to the WordPress admin that are worth knowing about:
+
+- **Menu order is fixed.** *Webkul WC Addons*, *WooCommerce* and *Products* are moved together, in that order, directly below *Comments*.
+- **The Editor role is upgraded.** Users with the built-in **Editor** role are granted the full set of WooCommerce product capabilities (`manage_woocommerce`, `edit_products`, `publish_products`, `edit_others_products`, `delete_products` and the related product-term capabilities), so they can use Canva Connect. To keep their sidebar focused, the default **Posts**, **Media** and **Pages** menus are hidden from Editors, the content itself is untouched and still reachable by direct URL.
+
+> ⚠ **Note:** If your site restricts Editor user roles from managing WooCommerce products, review your role permissions before activating on production.
+
+---
+
+<!-- source: https://wpdoc.webkul.com/woocommerce-canva-connector/documentation/canva-developer-portal.html -->
+
+# Canva Developer Portal Setup
+
+Connecting WooCommerce to Canva requires **two separate items** in the [Canva Developer Portal](https://www.canva.com/developers/). They are not interchangeable, and the integration only works when both exist:
+
+| Item            | Purpose                                              | What you copy out                                        |
+|-----------------|------------------------------------------------------|----------------------------------------------------------|
+| **App**         | The React sidebar that runs inside the Canva editor  | **App ID** (starts with `AAG…`)                          |
+| **Integration** | The Connect API client used by your WordPress server | **Client ID** (starts with `OC-…`) and **Client Secret** |
+
+Keep all three values to hand, they go into [Canva Connect Settings](https://wpdoc.webkul.com/woocommerce-canva-connector/documentation/configuration-canva-connect.html) in the next step.
+
+---
+
+## Step 1: Create an App
+
+The App is the frontend half: the panel your team sees in the Canva editor.
+
+1. Log in to the [Canva Developer Portal](https://www.canva.com/developers/).
+2. Go to **Your apps** and click **Create an App**.
+3. Give it a name your team will recognise, for example *Webkul WooCommerce*.
+4. Copy the generated **App ID**. It looks like `AAHOGOJacpE`.
+
+> 💡 **Leave the App's Authentication tab empty.** You do *not* need to add an authentication provider. The app authenticates to your store with the RS256 JWT that Canva issues through `getDesignToken()`, not with OAuth.
+
+The App ID is not cosmetic. Your store compares it against the `aud` claim of every incoming token, which is what stops a different Canva app from reading or overwriting your products.
+
+---
+
+## Step 2: Create an Integration
+
+The Integration is the backend half: the OAuth2 client your WordPress server uses to create and read designs through the Canva Connect API.
+
+1. In the Developer Portal, open the **Your integrations** tab.
+2. Click **Create an integration**.
+3. Under **Configuration**, note the **Client ID**, it looks like `OC-AZ_6NBnoLhwl`.
+4. Generate a **Client Secret** and copy it immediately.
+
+> ⚠ The Client Secret is shown **once**. If you navigate away without copying it, generate a new one and update WordPress to match.
+
+---
+
+## Step 3: Enable the Required Scopes
+
+Still inside your **Integration**, open the **Scopes** tab and enable all five scopes the plugin requests:
+
+```
+design:content:read
+design:content:write
+design:meta:read
+asset:read
+asset:write
+```
+
+| Scope                  | Why the plugin needs it                                               |
+|------------------------|-----------------------------------------------------------------------|
+| `design:content:read`  | Read the design when reopening an existing one                        |
+| `design:content:write` | Create the design and place the uploaded asset on it                  |
+| `design:meta:read`     | Resolve the design's `edit_url` to redirect the admin into the editor |
+| `asset:read`           | Confirm an asset upload job has completed                             |
+| `asset:write`          | Upload the existing product image into Canva                          |
+
+A missing scope surfaces as a failure on the very first design attempt, so enable all five before testing.
+
+> 💡 The plugin does **not** request `offline_access`. The Canva Connect API issues refresh tokens without it, which is what lets the plugin skip the consent screen on later designs.
+
+---
+
+## Step 4: Set the Redirect URI and Return Navigation URL
+
+Both fields live in your **Integration** settings, and both values are printed for you on the WordPress settings page.
+
+1. In WordPress, open **Webkul WC Addons > Canva Connect**.
+2. Under *Important URLs to paste in your Canva Developer Portal*, copy the two values.
+3. Paste them into the matching fields on the Canva Integration.
+
+| Canva field               | Value                                               |
+|---------------------------|-----------------------------------------------------|
+| **Redirect URI**          | `https://your-domain.com/wp-json/canva/v1/callback` |
+| **Return Navigation URL** | `https://your-domain.com/wp-json/canva/v1/return`   |
+
+<a class="doc-image-link" href="./assets/canva-connect-admin-settings.png"><img src="./assets/canva-connect-admin-settings.png" alt="Redirect URI and Return URL printed on the Canva Connect settings page" /></a>
+
+Copy these directly from your own settings page rather than typing them out. They automatically account for your site's domain, permalink structure, and REST prefix.
+
+Full detail on both fields, and on the HTTPS requirement, is in [Redirect URIs & HTTPS](https://wpdoc.webkul.com/woocommerce-canva-connector/documentation/configuration-redirect-uris.html).
+
+---
+
+## Step 5: Upload the App Bundle
+
+The App created in Step 1 has no code in it yet. Building the React bundle and uploading it is covered in [Build the Canva App](https://wpdoc.webkul.com/woocommerce-canva-connector/documentation/canva-app-build.html), do that after saving your credentials in WordPress, because the build needs your store URL.
+
+---
+
+## Checklist
+
+Before moving on, confirm you have:
+
+- [x] An **App**, and its **App ID** (`AAG…`)
+- [x] An **Integration**, and its **Client ID** (`OC-…`) and **Client Secret**
+- [x] All **five scopes** enabled on the Integration
+
+---
+
+<!-- source: https://wpdoc.webkul.com/woocommerce-canva-connector/documentation/configuration-canva-connect.html -->
+
+# Configuration: Canva Connect Settings
+
+After installing the plugin, configure your Canva Developer credentials from **Webkul WC Addons > Canva Connect** (or **Settings > Canva Connect**). The settings screen requires the `manage_woocommerce` capability.
+
+<a class="doc-image-link" href="./assets/canva-connect-admin-settings.png"><img src="./assets/canva-connect-admin-settings.png" alt="Canva Connect Settings in WooCommerce Admin" /></a>
+
+The settings page is located at:
+
+```
+https://your-domain.com/wp-admin/admin.php?page=wkwc-canva-connect
+```
+
+---
+
+## Settings Overview
+
+| Field                    | Source                                       | Stored as             | Required |
+|--------------------------|----------------------------------------------|-----------------------|----------|
+| **App ID**               | Canva Developer Portal → *Your apps*         | `canva_app_id`        | Yes      |
+| **Client ID**            | Canva Developer Portal → *Your integrations* | `canva_client_id`     | Yes      |
+| **Client Secret**        | Canva Developer Portal → *Your integrations* | `canva_client_secret` | Yes      |
+| **Disable CORS Headers** | Your own server configuration                | `wkwc_disable_cors`   | No       |
+
+Every value is sanitised before it is saved, and the form is protected by the `wkwc_settings_action` nonce.
+
+---
+
+## App ID
+
+Paste the App ID you copied from **Your apps** in the Developer Portal. It begins with `AAG…`, for example `AAHOGOJacpE`.
+
+This is used for **strict security validation**. Every request the Canva app makes to your store carries a Canva-issued RS256 JWT, and the plugin compares that token's `aud` claim against this value before doing anything with it.
+
+> ⚠ **Do not leave this field empty.** The `aud` comparison only executes when the field has a value. With it blank, any Canva app presenting a validly signed token is accepted, and could read your catalogue or overwrite product images.
+
+---
+
+## Client ID
+
+Paste the Client ID from your Canva **Integration**. It begins with `OC-…`, for example `OC-AZ_6NBnoLhwl`.
+
+The Client ID identifies your store to Canva during the OAuth2 handshake. If it is missing, clicking **Design with Canva** returns:
+
+```json
+{
+  "code": "no_key",
+  "message": "Client ID not set.",
+  "data": { "status": 400 }
+}
+```
+
+---
+
+## Client Secret
+
+Paste the Client Secret generated alongside your Client ID. The field is rendered as a password input, so the stored value is masked on screen.
+
+The secret is combined with the Client ID into an HTTP Basic `Authorization` header when the plugin exchanges an authorization code, or a refresh token, for an access token at `https://api.canva.com/rest/v1/oauth/token`.
+
+> ⚠ Rotating the secret in the Developer Portal invalidates the one saved here. Update this field immediately afterwards, or every design attempt will fail at the token exchange.
+
+---
+
+## Disable CORS Headers
+
+Leave this **unchecked** on a standard installation.
+
+The Canva app runs inside an iframe served from `https://app-{app-id}.canva-apps.com`, so every call it makes to your store is cross-origin and preceded by a preflight request. By default the plugin answers those preflights for the `canva/v1` namespace and sends:
+
+```http
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Headers: Authorization, Content-Type
+Access-Control-Allow-Methods: GET, POST, OPTIONS
+Access-Control-Max-Age: 86400
+Vary: Origin
+```
+
+Tick the box **only if your web server already adds its own `Access-Control-Allow-Origin` header**, for instance through an Apache `Header always add` rule or an Nginx `add_header` directive. Two copies of that header is a hard browser error ("contains multiple values … but only one is allowed"), and PHP cannot remove one the web server appends after PHP has finished running.
+
+When ticked, the plugin stops sending `Access-Control-Allow-Origin` but **still sends the other headers**, because hand-written server CORS blocks commonly omit `Authorization` from `Access-Control-Allow-Headers`, which would break every bearer-token request the app makes.
+
+`Access-Control-Allow-Credentials` is deliberately never sent: browsers reject the combination of a wildcard origin and credentials, and the app authenticates with a bearer token rather than cookies.
+
+### Restricting the origin in code
+
+If a wildcard origin is too permissive for your policy, narrow it with the provided filter instead of disabling the headers:
+
+```php
+add_filter(
+    'wkwc_canva_allowed_origin',
+    function ( $origin, $request_origin ) {
+        $app_id = strtolower( get_option( 'canva_app_id' ) );
+
+        return 'https://app-' . $app_id . '.canva-apps.com';
+    },
+    10,
+    2
+);
+```
+
+Returning an empty string from this filter omits the header entirely and blocks all cross-origin browser calls.
+
+---
+
+## Important URLs
+
+Below the form the page prints the two URLs that must be registered on your Canva **Integration**:
+
+| Label                              | Example value                                       |
+|------------------------------------|-----------------------------------------------------|
+| **Redirect URI**                   | `https://your-domain.com/wp-json/canva/v1/callback` |
+| **Return URL (Return Navigation)** | `https://your-domain.com/wp-json/canva/v1/return`   |
+
+Always copy these from your own settings page rather than typing them by hand, they are generated with `rest_url()`, so they already reflect your site address, any subdirectory install and your permalink structure.
+
+See [Redirect URIs & HTTPS](https://wpdoc.webkul.com/woocommerce-canva-connector/documentation/configuration-redirect-uris.html) for what each URL does and why HTTPS is non-negotiable.
+
+---
+
+## Saving
+
+Click **Save Settings**. A *Settings saved.* notice confirms the update.
+
+Nothing else needs to be configured on the WordPress side, there are no per-product settings, and no shortcodes to place.
+
+---
+
+## Verifying the Configuration
+
+1. Open any product for editing.
+2. Confirm the **Design with Canva** meta box is present in the right-hand column.
+3. Click the button. On the first run Canva shows its consent screen; approve it.
+4. You should land in the Canva editor on a canvas sized to your product image.
+
+If step 3 or 4 fails, check [Troubleshooting](https://wpdoc.webkul.com/woocommerce-canva-connector/documentation/troubleshooting.html).
+
+---
+
+<!-- source: https://wpdoc.webkul.com/woocommerce-canva-connector/documentation/configuration-redirect-uris.html -->
+
+# Configuration: Redirect URIs & HTTPS
+
+The OAuth2 handshake between your store and Canva depends on **two URLs** being registered identically on both sides, over **HTTPS**. This page covers both requirements in detail.
+
+<a class="doc-image-link" href="./assets/canva-connect-settings.webp"><img src="./assets/canva-connect-settings.webp" alt="Redirect URI and Return URL on the Canva Connect settings page" /></a>
+
+---
+
+## Where the URLs come from
+
+The plugin prints both URLs on **Webkul WC Addons > Canva Connect**, under the heading *Important URLs to paste in your Canva Developer Portal*:
+
+| Label on the settings page         | Canva Developer Portal field | REST route               |
+|------------------------------------|------------------------------|--------------------------|
+| **Redirect URI**                   | *Redirect URIs*              | `GET /canva/v1/callback` |
+| **Return URL (Return Navigation)** | *Return navigation*          | `GET /canva/v1/return`   |
+
+Both are generated with WordPress's `rest_url()`, so they already account for:
+
+- your site address, including `www` or its absence
+- a subdirectory installation
+- your permalink structure and REST prefix
+
+**Always copy them from your settings page.** Typing them by hand is the single most common cause of a failed first connection.
+
+For example, on a standard installation, the two values resolve to:
+
+```
+https://your-domain.com/wp-json/canva/v1/callback
+https://your-domain.com/wp-json/canva/v1/return
+```
+
+---
+
+## The Redirect URI
+
+This is where Canva sends the merchant's browser after the consent screen, carrying the authorization `code` and the `state` value.
+
+**Register it under:** Developer Portal → *Your integrations* → your integration → **Redirect URIs**.
+
+What the endpoint does when Canva calls it:
+
+1. Reads `code` and `state` from the query string.
+2. Strips everything non-alphanumeric from `state` and looks up the `canva_state_{state}` transient, which holds the product ID. A missing or expired transient returns **"Security check failed. Invalid state."**
+3. Deletes the state transient, making it single-use.
+4. Reads the PKCE `code_verifier` stored for that product.
+5. Exchanges `code` + `code_verifier` for an access token at `https://api.canva.com/rest/v1/oauth/token`, authenticating with HTTP Basic (`client_id:client_secret`).
+6. Stores the returned `refresh_token` in the `canva_refresh_token` option.
+7. Creates or reopens the design and redirects into the Canva editor.
+
+> ⚠ The URI must match **byte for byte** between WordPress and Canva. A trailing slash, `http` instead of `https`, or `www.` on one side only will be rejected by Canva as an invalid redirect.
+
+---
+
+## The Return Navigation URL
+
+This is where Canva sends the merchant when they click the **Return to …** button in the top-right of the editor.
+
+**Register it under:** Developer Portal → *Your integrations* → your integration → **Return navigation**.
+
+What the endpoint does:
+
+1. Finds the most recent active `canva_token_{post_id}` transient.
+2. Derives the post ID from that transient's name.
+3. Clears the session transients for the token and the design.
+4. Redirects the browser to `wp-admin/post.php?post={id}&action=edit`, the product edit screen.
+
+If no session transient is found the endpoint answers **"No active session found."**, typically because the one-hour session expired, or because the browser returned long after the design was opened.
+
+> 💡 The return button reads *Return to `{your site name}`*, in the screenshots it appears as **Return to webkul-WooCommerce**, because that is the site name registered on the Canva integration.
+
+---
+
+## HTTPS is mandatory
+
+> ⚠ **Canva rejects OAuth redirects to plain HTTP URLs.** A store served over `http://` cannot complete the handshake, no matter how the credentials are configured.
+
+HTTPS is required in three separate places:
+
+| Where                                              | Why                                                                                        |
+|----------------------------------------------------|--------------------------------------------------------------------------------------------|
+| The **Redirect URI**                               | Canva refuses to register or redirect to an `http://` URL                                  |
+| The **Return Navigation URL**                      | Same restriction applies                                                                   |
+| The **`CANVA_BACKEND_HOST`** the app is built with | The Canva editor is HTTPS; a browser blocks an insecure `fetch()` from it as mixed content |
+
+### Making WordPress emit HTTPS URLs
+
+`rest_url()` derives its scheme from the `home` and `siteurl` options. If the settings page prints `http://…`, fix the site address rather than editing the URL by hand:
+
+1. **Settings > General**: set both **WordPress Address** and **Site Address** to the `https://` form.
+2. Or define them in `wp-config.php`:
+
+```php
+define( 'WP_HOME',    'https://your-domain.com' );
+define( 'WP_SITEURL', 'https://your-domain.com' );
+```
+
+3. If WordPress sits behind a reverse proxy or load balancer that terminates TLS, tell it so, otherwise it will keep generating `http://` links:
+
+```php
+if ( isset( $_SERVER['HTTP_X_FORWARDED_PROTO'] ) && 'https' === $_SERVER['HTTP_X_FORWARDED_PROTO'] ) {
+    $_SERVER['HTTPS'] = 'on';
+}
+```
+
+Place this above the `require_once ABSPATH . 'wp-settings.php';` line.
+
+A local or staging installation still requires a valid SSL certificate. Two workable options:
+
+- **A public HTTPS tunnel**: expose the local site through a tunnelling service and use the public HTTPS hostname as both the Redirect URI and `CANVA_BACKEND_HOST`. This is the most reliable route, because Canva's servers can reach it.
+- **A self-signed certificate**: sufficient for the browser-side redirects once you trust the certificate locally, but Canva's own servers must still be able to reach the callback. Use this only when the host is publicly resolvable.
+
+> ⚠ Plain `http://localhost` and XAMPP-style setups without HTTPS will not work. This is a Canva platform restriction, not a plugin limitation.
+
+---
+
+## Verifying the setup
+
+Run each check in order:
+
+**1: The REST routes answer.**
+
+```bash
+curl -I https://your-domain.com/wp-json/canva/v1/products
+```
+
+Expect **HTTP 401** (route exists, token demanded). A **404** means permalinks need flushing at *Settings > Permalinks*.
+
+**2: The callback is reachable over HTTPS.**
+
+```bash
+curl -sS -o /dev/null -w '%{http_code} %{ssl_verify_result}\n' \
+  https://your-domain.com/wp-json/canva/v1/callback
+```
+
+Expect **200** with an `ssl_verify_result` of **0**. A non-zero verify result means the certificate chain is incomplete and Canva's servers will reject it.
+
+**3: The scheme is right.** Open the settings page and confirm both printed URLs start with `https://`.
+
+**4: End to end.** Click *Design with Canva* on a product and approve the consent screen. Landing in the Canva editor confirms the whole chain.
+
+---
+
+## Common Redirect Errors
+
+| Symptom                                            | Cause                                                                     | Fix                                                 |
+|----------------------------------------------------|---------------------------------------------------------------------------|-----------------------------------------------------|
+| Canva shows *invalid redirect_uri*                 | The registered URI differs from `rest_url( 'canva/v1/callback' )`         | Re-copy the value from the settings page            |
+| *Security check failed. Invalid state.*            | The 300-second state transient expired, or the callback was replayed      | Restart from the *Design with Canva* button         |
+| *Failed to get access token*                       | Wrong Client Secret, or a mismatched `redirect_uri` at the token exchange | Re-save the secret; confirm the URI matches exactly |
+| *No active session found.*                         | The one-hour session transient expired before the return click            | Reopen the product and start again                  |
+| Browser blocks the app's requests as mixed content | `CANVA_BACKEND_HOST` was built with `http://`                             | Rebuild the app with the `https://` host            |
+
+More detail in [Troubleshooting](https://wpdoc.webkul.com/woocommerce-canva-connector/documentation/troubleshooting.html).
+
+---
+
+<!-- source: https://wpdoc.webkul.com/woocommerce-canva-connector/documentation/canva-app-build.html -->
+
+# Build the Canva App
+
+The App you created in the [Canva Developer Portal](https://wpdoc.webkul.com/woocommerce-canva-connector/documentation/canva-developer-portal.html) is an empty shell until you compile the React frontend and upload it. The bundle has to be built **against your own store URL**, because that URL is baked into the JavaScript at compile time, there is no runtime setting for it.
+
+<a class="doc-image-link" href="./assets/canva-developer-portal-code-upload.png"><img src="./assets/canva-developer-portal-code-upload.png" alt="Upload compiled JavaScript bundle to Canva Developer Portal Code Upload" /></a>
+
+---
+
+## Requirements
+
+| Requirement | Version             |
+|-------------|---------------------|
+| Node.js     | `v18` or `v20.10.0` |
+| npm         | `v9` or `v10`       |
+
+The project ships an `.nvmrc` pinned to `20.10.0`, so a version manager gets you the right runtime in one command:
+
+```bash
+cd canva-app-frontend
+nvm install
+```
+
+---
+
+## Step 1: Install dependencies
+
+```bash
+cd canva-app-frontend
+npm install
+```
+
+The `postinstall` script copies `.env.template` to `.env` if you do not already have one.
+
+---
+
+## Step 2: Point the app at your store
+
+`CANVA_BACKEND_HOST` is the base URL the app prefixes onto every request, for example `${BACKEND_HOST}/wp-json/canva/v1/products`. Set it to the **root URL of your WordPress site**, with no trailing slash and no `/wp-json` suffix.
+
+Open `.env` and set it:
+
+```bash
+CANVA_BACKEND_HOST=https://your-domain.com
+CANVA_APP_ID=AAHOGOJacpE
+```
+
+For a subdirectory install, include the subdirectory path:
+
+```bash
+CANVA_BACKEND_HOST=https://your-domain.com/store
+```
+
+> ⚠ **It must be HTTPS.** The Canva editor is served over HTTPS, so a browser blocks any `fetch()` the app makes to an `http://` origin as mixed content. A production build whose host contains `localhost` prints the warning *"BACKEND_HOST should not be set to localhost for production builds!"*, the build still completes, so read the console output before uploading a bundle.
+
+You can override the value on the command line instead of editing `.env`, which is handy in CI:
+
+```bash
+CANVA_BACKEND_HOST=https://your-domain.com npm run build
+```
+
+### Environment variables
+
+| Variable              | Purpose                                                                                                                                                          |
+|-----------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `CANVA_BACKEND_HOST`  | Root URL of your WordPress store, **required**                                                                                                                  |
+| `CANVA_APP_ID`        | Your Canva App ID, used for JWT verification                                                                                                                     |
+| `CANVA_BACKEND_PORT`  | Port for the sample Node backend that ships with the Canva starter. Not used by this integration, WordPress *is* the backend, and safe to leave at its default |
+| `CANVA_APP_ORIGIN`    | From *Developer Portal → Configure your app → App Origin*; enables HMR                                                                                           |
+| `CANVA_HMR_ENABLED`   | Set to `TRUE` to enable hot module replacement while developing                                                                                                  |
+| `CANVA_FRONTEND_PORT` | Dev server port, default `8080`                                                                                                                                  |
+| `CANVA_HTTPS_ENABLED` | Serve the dev server over HTTPS, required to preview in Safari                                                                                                  |
+| `CANVA_SSL_KEY_FILE`  | Path to a TLS private key; leave empty to auto-generate into `./.ssl`                                                                                            |
+| `CANVA_SSL_CERT_FILE` | Path to the matching TLS certificate                                                                                                                             |
+
+---
+
+## Step 3: Build the bundle
+
+```bash
+npm run build
+```
+
+This runs webpack in production mode and then extracts the translation messages. The output lands in:
+
+```
+canva-app-frontend/dist/app.js
+```
+
+If the build stops with **"BACKEND_HOST is undefined."**, `CANVA_BACKEND_HOST` was not set, go back to Step 2. This is the only host problem that aborts the build; a `localhost` host only warns.
+
+---
+
+## Step 4: Upload the bundle to Canva
+
+1. Open the [Canva Developer Portal](https://www.canva.com/developers/) and select your **App**.
+2. Go to **App source** and choose to upload a bundle.
+3. Upload `dist/app.js`.
+4. Save, then preview the app.
+
+The app registers itself as a **Design Editor intent**, so it appears in the Canva editor's side panel, labelled with your app's name, shown as **Webkul App** in the screenshots throughout this documentation.
+
+---
+
+## Developing against a live store
+
+For iterative work you can run the dev server instead of uploading a bundle each time:
+
+```bash
+npm start
+```
+
+The server listens on `http://localhost:8080`. It only serves a JavaScript bundle, so there is nothing to see by visiting that URL directly, preview it through Canva:
+
+1. In the Developer Portal, open your app and select **App source > Development URL**.
+2. Enter `http://localhost:8080`.
+3. Click **Preview** to open the Canva editor with your app loaded.
+4. Click **Open** the first time you use the app.
+
+To preview in **Safari**, the dev server must itself be HTTPS-enabled, set `CANVA_HTTPS_ENABLED=TRUE` in `.env`, or pass `--use-https` to `npm start`. Leaving `CANVA_SSL_KEY_FILE` and `CANVA_SSL_CERT_FILE` empty auto-generates a self-signed certificate into `./.ssl`.
+
+Even in development, `CANVA_BACKEND_HOST` must point at a **real HTTPS WordPress instance** with the plugin installed. The app has no mock data, an unreachable backend shows *"Failed to load products. Please check if your WordPress site is accessible."*
+
+---
+
+## Useful scripts
+
+| Command              | What it does                                               |
+|----------------------|------------------------------------------------------------|
+| `npm start`          | Start the dev server for Developer Portal previews         |
+| `npm run build`      | Production build into `dist/app.js`, then extract messages |
+| `npm run lint`       | ESLint over the project                                    |
+| `npm run lint:fix`   | ESLint with autofix                                        |
+| `npm run lint:types` | TypeScript type-check only                                 |
+| `npm run format`     | Prettier over all CSS and TS/TSX files                     |
+| `npm test`           | Jest test suite                                            |
+| `npm run extract`    | Extract i18n messages into `dist/messages_en.json`         |
+
+---
+
+## Rebuild checklist
+
+You must rebuild and re-upload the bundle whenever:
+
+- your **store URL changes**, including moving from staging to production
+- you switch from `http://` to `https://`
+- your site moves into or out of a **subdirectory**
+- you change anything in `src/app.tsx`
+
+The App ID and the store credentials live in WordPress and in the Developer Portal, so changing those does **not** require a rebuild.
+
+---
+
+<!-- source: https://wpdoc.webkul.com/woocommerce-canva-connector/documentation/design-with-canva.html -->
+
+# Design with Canva
+
+Once the plugin is configured and the Canva app is uploaded, designing a product image is a single click. This guide covers launching the Canva editor directly from WordPress and seamlessly returning with updated imagery.
+
+<a class="doc-image-link" href="./assets/product-edit-design-with-canva-button.png"><img src="./assets/product-edit-design-with-canva-button.png" alt="Design with Canva meta box on the WooCommerce product edit page" /></a>
+
+---
+
+## Where the button appears
+
+The plugin injects **Design with Canva** in two places.
+
+### 1. The product edit page
+
+Open any product from **Products > All Products** and look in the **right-hand column**. Scroll down past *Publish*, *Product image*, *Product gallery*, *Product categories*, *Product tags* and *Brands*, the **Design with Canva** meta box sits with them:
+
+<a class="doc-image-link" href="./assets/design-with-canva-metabox.webp"><img src="./assets/design-with-canva-metabox.webp" alt="The Design with Canva meta box, with its button" /></a>
+
+It contains one line of text, *Click below to create a new featured image using Canva.*, and one blue **Design with Canva** button.
+
+The meta box is registered for the `product` post type and for regular `post` types, in the `side` context with default priority. Its exact position in the column therefore follows WordPress's normal meta box ordering, and each user can drag it higher or lower; the position is remembered per user. If you cannot see it, check that **Design with Canva** is ticked under **Screen Options** at the top of the edit screen.
+
+### 2. The products list row action
+
+<a class="doc-image-link" href="./assets/products-list-design-with-canva.webp"><img src="./assets/products-list-design-with-canva.webp" alt="Design with Canva row action on the WooCommerce products list" /></a>
+
+Hover any row on **Products > All Products** and the row actions appear beneath the product name, in this order:
+
+```
+ID: 38 | Edit | Quick Edit | Trash | View | Design with Canva | Duplicate
+```
+
+**Design with Canva** is rendered in purple and bold so it stands out. It starts exactly the same flow without opening the product first.
+
+> 💡 *Duplicate* comes from WooCommerce and *ID:* from the products list itself, so the exact set of neighbouring links depends on which other plugins are active. Canva Connect always inserts its link after the core actions.
+
+> 💡 Both entry points open in a **new browser tab**, so your WordPress editing session, including any unsaved product changes, stays open behind it.
+
+---
+
+## Who can use it
+
+The link is built with `wp_nonce_url()` against the `wp_rest` action, and the endpoint behind it requires the **`edit_products`** capability. Administrators and Shop Managers qualify by default.
+
+| Situation                         | Result                                |
+|-----------------------------------|---------------------------------------|
+| Signed out                        | **401**, `rest_forbidden`            |
+| Signed in without `edit_products` | **403**                               |
+| Nonce missing or stale            | **403**, `rest_cookie_invalid_nonce` |
+
+A stale nonce usually means the page has been open for more than a day. Refresh the product edit screen and click again.
+
+---
+
+## What happens when you click
+
+**Step 1, Authorisation.**
+The first time you ever click the button, you are redirected to Canva's consent screen to authorise the integration. Approve it. The five requested scopes are `design:content:read`, `design:content:write`, `design:meta:read`, `asset:read` and `asset:write`.
+
+On every later click the plugin uses the stored refresh token to obtain a new access token silently, **you will not see the consent screen again**.
+
+**Step 2, Existing design check.**
+If this product has been designed before, its design ID is stored as the `_canva_design_id` post meta. The plugin looks the design up and, if it is still valid, reopens it. Your previous work is preserved.
+
+**Step 3, Image pre-upload.**
+For a product with no existing design, the plugin uploads the current featured image to Canva as an asset and polls the upload job until it completes. The canvas then opens with that image already placed on it.
+
+**Step 4, Canvas sizing.**
+The design is created at exactly the right dimensions, resolved in this order:
+
+1. The **full-size dimensions of the product's featured image**
+2. Your theme's **`woocommerce_single`** image size, when the product has no image
+3. **1080 × 1080** as the final fallback
+
+**Step 5, Redirect into the editor.**
+The Canva editor opens on the new (or reopened) canvas, titled `Product Image - {Product Name}`.
+
+---
+
+## In the editor
+
+<a class="doc-image-link" href="./assets/canva-app-current-product.webp"><img src="./assets/canva-app-current-product.webp" alt="The Webkul App panel open beside a product design in Canva" /></a>
+
+Design as you normally would in Canva. The **Webkul App** panel on the left gives you your catalogue: product search, product data as text, click-to-replace images and the **Save Design to Store** button.
+
+That panel is covered in full on [Using the Canva App](https://wpdoc.webkul.com/woocommerce-canva-connector/documentation/canva-app-sidebar.html), and saving is covered on [Save to Store](https://wpdoc.webkul.com/woocommerce-canva-connector/documentation/save-to-store.html).
+
+---
+
+## Returning to WordPress
+
+Click **Return to `{your site}`** in the top-right of the Canva editor, shown as **Return to webkul-WooCommerce** in the screenshots.
+
+This hits the Return Navigation URL, which clears the session transients and redirects you back to that product's edit screen at `wp-admin/post.php?post={id}&action=edit`.
+
+> 💡 **Save before you return.** Returning does not save anything by itself, click **Save Design to Store** in the sidebar first. Returning only navigates.
+
+If the session has expired (transients live for one hour), the return page answers **"No active session found."**. Nothing is lost: your design remains in Canva, and reopening the product and clicking *Design with Canva* brings it straight back.
+
+---
+
+## Verifying the result
+
+Back on the product edit screen, refresh the page. The **Product image** box in the right-hand column now shows the design you exported.
+
+The image is a real entry in the WordPress **Media Library**, attached to the product, and can be edited, replaced or removed like any other upload.
+
+---
+
+## Designing the same product again
+
+Click **Design with Canva** on the same product at any time. Because the design ID is stored on the product, you reopen the *same* Canva design rather than starting over, and can iterate on the artwork you already made.
+
+Saving again replaces the featured image with the new export. The previous image stays in the Media Library, it is unattached, not deleted, so nothing is lost by accident.
+
+---
+
+<!-- source: https://wpdoc.webkul.com/woocommerce-canva-connector/documentation/canva-app-sidebar.html -->
+
+# Using the Canva App
+
+The **Webkul App** panel is the left-hand sidebar inside the Canva editor. It is a React app that talks directly to your WooCommerce store, making your live catalog, variations, and product data available while you design.
+
+Open it from the **Apps** icon in Canva's left rail, or find it pinned at the bottom of the rail once you have used it. When you arrive via the *Design with Canva* button it opens automatically.
+
+<a class="doc-image-link" href="./assets/canva-app-product-search.webp"><img src="./assets/canva-app-product-search.webp" alt="The Webkul App panel in the Canva editor" /></a>
+
+---
+
+## Panel layout
+
+From top to bottom:
+
+| Section                 | What it does                                                         |
+|-------------------------|----------------------------------------------------------------------|
+| **💡 Tip**               | A reminder of how click-to-replace works                             |
+| **✨ Current Product**   | The product this design belongs to, highlighted with a purple border |
+| **Your Store Products** | The searchable catalogue                                             |
+| **Search box**          | Filters by product name or SKU                                       |
+| **Product cards**       | One card per product, with images, data and actions                  |
+
+---
+
+## Current Product
+
+The app asks your store which product the open design belongs to. It sends the design token, the plugin reads the `designId` claim, and matches it against the `_canva_design_id` post meta saved when the design was created.
+
+When a match is found, that product is pinned at the top under **✨ Current Product**, drawn with a purple border and a pale purple background, and removed from the list below so it never appears twice.
+
+If you opened the app on an unrelated Canva design, one not created through *Design with Canva*, no current product is shown. That is expected: the catalogue below still works, and *Save Design to Store* on any card still targets that card's product.
+
+---
+
+## Searching your catalogue
+
+<a class="doc-image-link" href="./assets/canva-app-product-search.webp"><img src="./assets/canva-app-product-search.webp" alt="Searching WooCommerce products from inside the Canva editor" /></a>
+
+Type into **Search products by name or SKU…**.
+
+- The query is **debounced by 500 ms**, so results arrive once you pause typing.
+- It matches **published products only**, returning up to **50** per query.
+- A **purely numeric** query is additionally looked up as a **product ID**; if that product exists and is published, it is pinned to the top of the results.
+- An empty search box lists your catalogue.
+
+While a request is in flight the panel shows *Searching…*. An empty result set shows *No products found.*
+
+---
+
+## What is on a product card
+
+Each card shows:
+
+- **A thumbnail grid**: the featured image first, then every gallery image. The grid is one, two or three columns depending on how many images there are.
+- **A Select Variation dropdown**: only for variable and grouped products.
+- **The product name**, in bold.
+- **Price** and **SKU**, when set.
+- **Action buttons**: *Add Name*, *Add Price*, *Add Description* and *Save Design to Store*.
+
+---
+
+## Replacing an image on the canvas
+
+This is the core interaction, and it has a required order:
+
+1. **Click the image on your Canva canvas** to select it. Canva draws a coloured border around the selected frame.
+2. **Click a thumbnail** in the sidebar, the featured image or any gallery image.
+3. The image is fetched from your store, uploaded to Canva as an asset, and swapped into the selected frame in place.
+
+Behind the scenes the store returns the image as a base64 data URL rather than a plain link, which is what lets Canva ingest it without needing public access to your uploads directory.
+
+> ⚠ **Select a canvas image first.** Clicking a thumbnail with nothing selected shows the warning *"⚠️ Select an image on canvas first to replace it!"* for four seconds and does nothing else. This is deliberate, without a target frame there is nowhere for the image to go.
+
+While the swap is running the thumbnail fades to half opacity.
+
+---
+
+## Adding product data as text
+
+Three buttons drop live product data onto the canvas as text elements:
+
+| Button              | Inserts                                                                            |
+|---------------------|------------------------------------------------------------------------------------|
+| **Add Name**        | The product name, or `Product Name - Variation Name` when a variation is selected |
+| **Add Price**       | The price, prefixed with `$`                                                       |
+| **Add Description** | The short description, falling back to the full description                        |
+
+*Add Price* and *Add Description* only appear when the product actually has that data. Each click adds a new text element, which you can then position and style with Canva's normal tools.
+
+---
+
+## Working with variations
+
+<a class="doc-image-link" href="./assets/canva-app-save-design-to-store.webp"><img src="./assets/canva-app-save-design-to-store.webp" alt="Product cards with variation selectors and Save Design to Store buttons" /></a>
+
+For a **variable product**, the **Select Variation** dropdown lists *Main Product* plus every available variation, each labelled with its own price, for example `Main Product ($170)`.
+
+Switching the selection changes what the card displays and what the buttons do:
+
+| Selection        | Name / price / SKU / description shown                                                        | *Save Design to Store* target |
+|------------------|-----------------------------------------------------------------------------------------------|-------------------------------|
+| **Main Product** | The parent product's own values                                                               | The parent product            |
+| **A variation**  | The variation's values, falling back to the parent's where the variation leaves a field empty | **That variation's ID**       |
+
+This is what lets you build one design and attach it to a specific colour or size rather than to the whole product.
+
+**Grouped products** expose their children through the same dropdown, and behave the same way, selecting a child retargets the save at that child product.
+
+---
+
+## Refreshing the panel
+
+The panel refetches your catalogue automatically after a successful save, so the new artwork appears on the card straight away. To refresh manually, type in the search box and clear it again.
+
+---
+
+## When products do not load
+
+If the panel shows *"Failed to load products. Please check if your WordPress site is accessible."*, the app reached your store but the request did not succeed. The usual causes:
+
+- The store is not reachable over **HTTPS** from the Canva iframe.
+- `CANVA_BACKEND_HOST` was compiled with the wrong URL, see [Build the Canva App](https://wpdoc.webkul.com/woocommerce-canva-connector/documentation/canva-app-build.html).
+- The **App ID** saved in WordPress does not match the App the token was issued for.
+- A **CORS** header conflict with your web server.
+
+Each case is diagnosed step by step in [Troubleshooting](https://wpdoc.webkul.com/woocommerce-canva-connector/documentation/troubleshooting.html).
+
+---
+
+<!-- source: https://wpdoc.webkul.com/woocommerce-canva-connector/documentation/save-to-store.html -->
+
+# Save to Store
+
+**Save Design to Store** is the purple button at the bottom of every product card in the Canva sidebar. One click exports your design, sends it to WordPress, and sets it as the product's featured image, no downloading, no re-uploading, no re-attaching.
+
+<a class="doc-image-link" href="./assets/canva-app-save-design-to-store.webp"><img src="./assets/canva-app-save-design-to-store.webp" alt="Save Design to Store button in the Canva sidebar" /></a>
+
+---
+
+## How to save
+
+1. Finish your design on the Canva canvas.
+2. In the **Webkul App** sidebar, find the card for the product you want to update.
+3. For a variable or grouped product, pick the right entry in **Select Variation** first.
+4. Click **Save Design to Store**.
+
+The button reports its own progress:
+
+| Button label             | Meaning                                               |
+|--------------------------|-------------------------------------------------------|
+| **Save Design to Store** | Ready                                                 |
+| **Saving…**              | Export and upload in progress; the button is disabled |
+| **✅ Saved!**             | Success, resets after 4 seconds                      |
+| **❌ Failed to Save!**    | The save failed, resets after 5 seconds              |
+
+---
+
+## What happens on your store
+
+Once the export reaches WordPress, the plugin:
+
+1. **Validates the request**: the Canva JWT is verified against Canva's JWKS and its `aud` claim is checked against your saved App ID.
+2. **Sideloads the file** into the Media Library with `media_handle_sideload()`, attaching it to the product. WordPress generates all the usual intermediate sizes.
+3. **Sets the featured image**: the design becomes the product thumbnail via `set_post_thumbnail()`.
+4. **Returns success**, which triggers the sidebar to refetch so the new artwork appears on the card immediately.
+
+Files that fail to upload are skipped and their temporary copies deleted. If the upload fails, the store returns **HTTP 500, "Failed to upload images."** and the button shows *❌ Failed to Save!*.
+
+---
+
+## Accepted file types
+
+The export requests `jpg`, `png`, and `gif`, and the extension is chosen from what Canva returns:
+
+| Canva returns | Saved as |
+|---------------|----------|
+| `image/png`   | `.png`   |
+| `image/gif`   | `.gif`   |
+| anything else | `.jpg`   |
+
+> 💡 **Note:** Standard web image formats (`.png`, `.jpg`, `.gif`) are fully supported by WordPress and WooCommerce product displays.
+
+---
+
+## Saving to a variation
+
+When **Select Variation** is set to a specific variation, *Save Design to Store* targets **that variation's own ID** rather than the parent product. The image is attached to the variation, so it appears when a shopper selects that combination on the storefront.
+
+Set the dropdown back to **Main Product** to update the parent product's image instead. Grouped products work identically, selecting a child targets that child.
+
+> 💡 The card you click matters as much as the dropdown. Each product card has its own *Save Design to Store* button and saves to *that* product, which means you can attach the same design to several products without leaving the editor.
+
+---
+
+## Verifying the result
+
+<a class="doc-image-link" href="./assets/wc-product-featured-image-saved.webp"><img src="./assets/wc-product-featured-image-saved.webp" alt="Design saved to WooCommerce product featured image" /></a>
+
+1. Click **Return to `{your site}`** at the top-right of the Canva editor.
+2. You land back on the product's edit screen in WordPress.
+3. Refresh the page.
+4. The **Product image** box shows the new design.
+
+The image is an ordinary Media Library attachment, visible under **Media > Library**, and editable, replaceable or removable like any other upload.
+
+> 💡 **Save before returning.** The return button only navigates; it does not save. If you leave without clicking *Save Design to Store*, the design stays in Canva but the product keeps its old image.
+
+---
+
+## Saving repeatedly
+
+You can save as many times as you like. Each save adds a new attachment and repoints the featured image at it.
+
+The previous image is **left in the Media Library**, unattached rather than deleted, so a save can never destroy an image you still needed. Tidy up old versions from **Media > Library** when you are sure they are no longer wanted.
+
+---
+
+## If the save fails
+
+| Symptom                             | Likely cause                                     | Fix                                                         |
+|-------------------------------------|--------------------------------------------------|-------------------------------------------------------------|
+| **❌ Failed to Save!** immediately   | The export never completed                       | Make sure the design is valid, then retry                   |
+| **❌ Failed to Save!** after a pause | The store rejected the upload                    | Check `wp-content/uploads` is writable by the web server    |
+| Save succeeds, product unchanged    | Browser cache on the edit screen                 | Hard-refresh the product edit page                          |
+| **401** in the browser console      | App ID mismatch, or an expired token             | Re-check the App ID in *Webkul WC Addons > Canva Connect*   |
+
+Full diagnostics are in [Troubleshooting](https://wpdoc.webkul.com/woocommerce-canva-connector/documentation/troubleshooting.html).
+
+---
+
+<!-- source: https://wpdoc.webkul.com/woocommerce-canva-connector/documentation/how-to-guide.html -->
+
+# Overview of the Setup Flow
+
+::: tip Seamless Design Integration
+When you connect WooCommerce with Canva, you aren't just creating product images; you are empowering your store with real-time catalog syncing, professional design workflows, and seamless one-click image publishing. One integrated setup gives your store stunning, high-converting product imagery instantly.
+:::
+
+
+
+## Step-by-Step Flow
+
+1. **Backend Setup:** Ensure your WooCommerce store is running with HTTPS, an active license, and pretty permalinks (`/%postname%/`).
+2. **Installation & Basic Setup:** Download the plugin package, upload it to WordPress, activate it, and license your installation.
+3. **Canva Developer Portal & Configuration:** Create your Canva Developer App, generate OAuth 2.0 credentials (Client ID & Secret), upload the JavaScript bundle, configure WooCommerce settings, manage CORS headers, and configure permalinks.
+4. **Using Canva with WooCommerce:** Launch Canva from WooCommerce product edit screens or products list, access catalog & variations in the Webkul App sidebar, design visuals, and save directly to Featured Image or Variations.
+
+---
+
+## Workflow Guides
+
+Select a section below to start the step-by-step setup:
+
+- 📦 [Installation & Basic Setup →](https://wpdoc.webkul.com/woocommerce-canva-connector/documentation/how-to-part-1.html)
+- ⚙️ [Canva Developer Portal & Configuration →](https://wpdoc.webkul.com/woocommerce-canva-connector/documentation/how-to-part-2.html)
+- 🎨 [Using Canva with WooCommerce →](https://wpdoc.webkul.com/woocommerce-canva-connector/documentation/how-to-part-3.html)
+
+---
+
+<!-- source: https://wpdoc.webkul.com/woocommerce-canva-connector/documentation/how-to-part-1.html -->
+
+# Installation & Basic Setup
+
+This guide walks you through the initial steps: system requirements, downloading, uploading, activating, and licensing the **WooCommerce Canva Connector** plugin on your WordPress store.
+
+---
+
+## System Requirements
+
+Before getting started, make sure your server environment meets the following requirements:
+
+| Requirement | Minimum / Recommended Version |
+| :--- | :--- |
+| **WordPress** | 5.8 or higher |
+| **WooCommerce** | 6.0 or higher |
+| **PHP** | 7.4, 8.0, 8.1, or 8.2 |
+| **SSL Certificate (HTTPS)** | Required for Canva OAuth and REST API communication |
+| **Canva Account** | Free or Pro Canva account with access to Developer Portal |
+
+---
+
+## Step 1: Download & Upload Plugin
+
+- **What to click:** In your WordPress Admin Dashboard, navigate to **Plugins > Add New Plugin** and click the **Upload Plugin** button at the top.
+- **What to do:** Click **Choose File**, select the `woocommerce-canva-connector.zip` file downloaded from your Webkul account, and click **Install Now**.
+- **Expected result:** WordPress unpacks and installs the plugin files on your server.
+
+<a class="doc-image-link" href="./assets/plugin-upload.webp"><img src="./assets/plugin-upload.webp" alt="Upload WooCommerce Canva Connector Plugin in WordPress Admin" /></a>
+
+---
+
+## Step 2: Activate the Plugin
+
+- **What to click:** On the installation status screen, click **Activate Plugin** (or go to **Plugins > Installed Plugins** and locate **WooCommerce Canva Connector**).
+- **What to do:** Ensure the plugin status shows as active.
+- **Expected result:** The plugin is enabled, and the **Webkul WC Addons** menu appears in your WordPress admin sidebar.
+
+<a class="doc-image-link" href="./assets/plugins-installed.webp"><img src="./assets/plugins-installed.webp" alt="Installed and Activated WooCommerce Canva Connector Plugin" /></a>
+
+---
+
+## Step 3: Activate License Key
+
+- **What to click:** In the WordPress admin menu, navigate to **Webkul WC Addons > License**.
+- **What to enter:** Enter your purchase code / license key in the field provided and click **Save & Activate**.
+- **Expected result:** Your license is validated, enabling product updates and support.
+
+<a class="doc-image-link" href="./assets/webkul-wc-addons-license.webp"><img src="./assets/webkul-wc-addons-license.webp" alt="Webkul WC Addons License Activation" /></a>
+
+---
+
+## Step 4: Locate Canva Connect Settings
+
+- **What to click:** Navigate to **Webkul WC Addons > Canva Connect** (or **Settings > Canva Connect**).
+- **What you will see:** The configuration dashboard displaying input fields for **App ID**, **Client ID**, **Client Secret**, **Disable CORS Headers**, and the automatically generated **Redirect URI** and **Return URL**.
+- **Expected result:** You are ready to connect your store with your Canva Developer Portal app.
+
+<a class="doc-image-link" href="./assets/webkul-wc-addons-list.webp"><img src="./assets/webkul-wc-addons-list.webp" alt="Webkul WC Addons Menu List" /></a>
+
+---
+
+<!-- source: https://wpdoc.webkul.com/woocommerce-canva-connector/documentation/how-to-part-2.html -->
+
+# Canva Developer Portal & Configuration
+
+Follow these steps to create your Canva Developer App, generate OAuth credentials, upload the app bundle, configure WooCommerce settings, manage CORS headers, and configure WordPress permalinks.
+
+---
+
+## Step 1: Create an App in Canva Developer Portal
+
+- **What to click:** Visit the [Canva Developer Portal](https://www.canva.com/developers/), log in to your Canva account, click **Your apps**, and click **Create an app**.
+- **What to enter:** Enter your app name (e.g., *Webkul App* or *My Store Canva Connector*).
+- **What to copy:** Copy the generated **App ID** (starts with `AAHOG...`).
+- **Expected result:** Your Canva App is created and assigned a unique App ID used for token validation.
+
+---
+
+## Step 2: Create Integration & OAuth Credentials
+
+- **What to click:** In the Canva Developer Portal, switch to the **Your integrations** tab and click **Create an integration**.
+- **What to do:**
+  1. Under **Configuration**, copy the **Client ID** (starts with `OC-...`).
+  2. Click **Generate secret** to generate and copy the **Client Secret**.
+  3. In the **Scopes** tab, enable the required permissions:
+     - `design:content:read`
+     - `design:content:write`
+     - `design:meta:read`
+     - `asset:read`
+     - `asset:write`
+- **Expected result:** OAuth 2.0 credentials and permissions are created for your store.
+
+---
+
+## Step 3: Upload App Bundle (Code Upload)
+
+- **What to click:** In your Canva App settings, navigate to **Build > Inside Canva > Code upload** (or **App source**).
+- **What to do:**
+  1. Select **JavaScript bundle**.
+  2. Click **Choose file** and upload your compiled `dist/app.js` bundle (maximum size 5MB).
+  3. Under **Translations**, upload your language file (e.g., `messages_en.json`) if needed.
+- **Expected result:** The bundle is uploaded, registering the Webkul App inside the Canva editor's left panel.
+
+<a class="doc-image-link" href="./assets/canva-developer-portal-code-upload.png"><img src="./assets/canva-developer-portal-code-upload.png" alt="Canva Developer Portal Code Upload and App Identifiers" /></a>
+
+---
+
+## Step 4: Configure WooCommerce Canva Connect Settings
+
+- **What to click:** In your WordPress Admin, go to **Webkul WC Addons > Canva Connect**.
+- **What to enter:**
+  1. **App ID:** Paste the App ID copied from Canva Developer Portal.
+  2. **Client ID:** Paste the Client ID from your Canva Integration.
+  3. **Client Secret:** Paste the Client Secret.
+- **What to copy & paste into Canva:**
+  - Copy the **Redirect URI** displayed at the bottom (`https://your-domain.com/wp-json/canva/v1/callback`) and paste it into the **Redirect URI** field of your Canva Integration.
+  - Copy the **Return URL** (`https://your-domain.com/wp-json/canva/v1/return`) and paste it into the **Return Navigation URL** field in Canva.
+- **What to click:** Click **Save Settings**.
+- **Expected result:** WordPress securely stores the credentials and the OAuth handshake is established.
+
+<a class="doc-image-link" href="./assets/canva-connect-admin-settings.png"><img src="./assets/canva-connect-admin-settings.png" alt="Canva Connect Settings in WooCommerce Admin" /></a>
+
+---
+
+## Step 5: CORS Headers & HTTPS Setup
+
+- **HTTPS Requirement:** Your WordPress store must have a valid SSL certificate (`https://`). Canva will reject unsecured `http://` API requests.
+- **Disable CORS Headers Checkbox:**
+  - **Leave unchecked (Default):** The plugin automatically manages and sends required CORS headers (`Access-Control-Allow-Origin: *`, `Authorization`, `Content-Type`) for Canva editor iframe requests.
+  - **Check the box only if:** Your web server (Nginx/Apache/Cloudflare) already injects its own `Access-Control-Allow-Origin` header to avoid duplicate header conflicts.
+- **Expected result:** Cross-origin communication between the Canva editor sandbox and your WooCommerce REST API operates smoothly without browser errors.
+
+---
+
+## Step 6: Configure WordPress Permalinks
+
+- **What to click:** Go to **Settings > Permalinks** in your WordPress Admin.
+- **What to select:** Under *Common Settings*, select **Post name** (`/%postname%/`).
+- **What to click:** Click **Save Changes**.
+- **Expected result:** WordPress permalinks are flushed, ensuring all `/wp-json/canva/v1/*` REST API endpoints route properly.
+
+<a class="doc-image-link" href="./assets/permalinks.webp"><img src="./assets/permalinks.webp" alt="WordPress Permalinks Post Name Setting" /></a>
+
+---
+
+<!-- source: https://wpdoc.webkul.com/woocommerce-canva-connector/documentation/how-to-part-3.html -->
+
+# Using Canva with WooCommerce
+
+Now that your setup is complete, follow these steps to design and update product imagery directly from WooCommerce into Canva and save them back to your store.
+
+---
+
+## Step 1: Launch "Design with Canva" from Product Edit Page
+
+- **What to click:** Go to **Products > All Products** and click **Edit** on the product you want to design (e.g., *Nike Air Jordan 1 Low*).
+- **What to do:** In the right-hand sidebar, locate the **Design with Canva** meta box (placed above or below the Product Image box) and click the blue **Design with Canva** button.
+- **Expected result:** Canva opens in a new browser tab with a design canvas automatically scaled to your product's image dimensions.
+
+<a class="doc-image-link" href="./assets/product-edit-design-with-canva-button.png"><img src="./assets/product-edit-design-with-canva-button.png" alt="Product Edit Page with Design with Canva Meta Box and Button" /></a>
+
+---
+
+## Step 2: Quick Launch from Products List (Row Action)
+
+- **What to click:** Go to **Products > All Products** in WordPress Admin.
+- **What to do:** Hover your mouse over any product row to reveal the quick action links, then click **Design with Canva** (highlighted in purple).
+- **Expected result:** Canva opens directly for that product in a new tab without having to load the full edit page first.
+
+<a class="doc-image-link" href="./assets/products-list-design-with-canva.webp"><img src="./assets/products-list-design-with-canva.webp" alt="Products List Table with Quick Design with Canva Action Link" /></a>
+
+---
+
+## Step 3: Open Webkul App in Canva Sidebar
+
+- **What to click:** Inside the Canva editor, click the **Webkul App** icon in the left-hand sidebar navigation.
+- **What you will see:** The Webkul App panel opens, displaying the **Current Product** details:
+  - Product Title & SKU
+  - Price & Variation selector dropdown
+  - Product thumbnail and gallery images
+  - Add Description / Add Name buttons
+- **Expected result:** You can access all product data directly within Canva without switching browser tabs.
+
+<a class="doc-image-link" href="./assets/canva-app-current-product.webp"><img src="./assets/canva-app-current-product.webp" alt="Webkul App Panel Open Inside Canva Editor Showing Current Product" /></a>
+
+---
+
+## Step 4: Search & Switch Store Products
+
+- **What to do:** Use the search bar inside the Webkul App sidebar to find any product in your WooCommerce catalogue by name or SKU.
+- **What to click:** Click on any search result to switch products immediately.
+- **Expected result:** The sidebar updates instantly with the selected product's information and assets, allowing multi-product designing in a single session.
+
+<a class="doc-image-link" href="./assets/canva-app-product-search.webp"><img src="./assets/canva-app-product-search.webp" alt="Product Search within Canva Webkul App Sidebar" /></a>
+
+---
+
+## Step 5: Design & Edit on the Canvas
+
+- **What to do:**
+  1. Click on the product image thumbnail in the sidebar to add or replace images on the canvas.
+  2. Select product variations to load variation-specific imagery.
+  3. Use Canva's rich design tools — add typography, remove backgrounds, apply shadows, add promo badges, adjust colors, and apply effects.
+- **Expected result:** A high-quality, branded product graphic ready to publish back to your WooCommerce store.
+
+---
+
+## Step 6: Save Design Back to WooCommerce Store
+
+- **What to click:** In the Webkul App sidebar, locate the **Save Design to Store** section.
+- **What to select:** Choose where you want to apply the new design:
+  - **Main Featured Image:** Replaces the primary featured image of the product.
+  - **Variation Image:** Attaches the design to a specific product variation.
+- **What to click:** Click the purple **Save Design to Store** button.
+- **Expected result:** Canva renders the design, securely transfers it to your WordPress Media Library, and links it directly to the product.
+
+<a class="doc-image-link" href="./assets/canva-app-save-design-to-store.webp"><img src="./assets/canva-app-save-design-to-store.webp" alt="Save Design to Store Options in Canva Sidebar" /></a>
+
+---
+
+## Step 7: Return to Store & Verify Updated Imagery
+
+- **What to click:** Click **Return to {your store}** at the top right of the Canva editor (or return to your open WordPress tab).
+- **What you will see:** The product edit screen refreshes with the new design set as the **Product Image** or variation image.
+- **Expected result:** Your WooCommerce store displays the new high-resolution Canva graphic live on the storefront.
+
+<a class="doc-image-link" href="./assets/wc-product-featured-image-saved.webp"><img src="./assets/wc-product-featured-image-saved.webp" alt="WooCommerce Product Featuring Saved Canva Design" /></a>
+
+---
+
+<!-- source: https://wpdoc.webkul.com/woocommerce-canva-connector/documentation/how-it-works.html -->
+
+# How It Works
+
+This page explains the architecture behind the integration, the OAuth2 PKCE handshake, how the design is created and sized, how the Canva app authenticates back to your store, and how the finished artwork is sideloaded onto the product.
+
+It is background reading. Nothing here needs to be configured by hand.
+
+---
+
+## The two halves
+
+| Component            | Technology             | Runs on                        | Responsibility                                                |
+|----------------------|------------------------|--------------------------------|---------------------------------------------------------------|
+| `wp-canva-connect`   | PHP / WordPress plugin | Your store                     | OAuth handshake, design creation, image sideloading, REST API |
+| `canva-app-frontend` | React + TypeScript     | Inside the Canva editor iframe | Sidebar UI, product search, design export                     |
+
+They meet at one place: the **`canva/v1` REST namespace** on your store.
+
+---
+
+## Flow 1: Starting a design (OAuth2 with PKCE)
+
+Triggered by the *Design with Canva* button.
+
+### First run: full consent
+
+1. **`GET /canva/v1/auth?post_id={id}&_wpnonce={nonce}`**
+   The endpoint requires a signed-in user with `edit_products` and a valid `wp_rest` nonce.
+
+2. **No refresh token yet**, so a fresh authorization is started.
+
+3. **State generated.** A 32-character opaque value is created and stored server-side as the transient `canva_state_{state}`, holding the product ID, with a **300-second** lifetime. The product ID is never exposed in the URL.
+
+4. **PKCE verifier generated.** A 64-character `code_verifier` is stored as `canva_code_verifier_{post_id}`, also for 300 seconds. The challenge sent to Canva is:
+
+   ```
+   code_challenge = base64url( sha256( code_verifier ) )
+   code_challenge_method = S256
+   ```
+
+5. **Redirect to Canva** via `wp_safe_redirect()`, with `canva.com` and `www.canva.com` added to the allowed-redirect-hosts list and nothing else:
+
+   ```
+   https://www.canva.com/api/oauth/authorize
+     ?response_type=code
+     &client_id={client_id}
+     &redirect_uri={site}/wp-json/canva/v1/callback
+     &scope=design:content:read design:content:write design:meta:read asset:read asset:write
+     &state={state}
+     &code_challenge={challenge}
+     &code_challenge_method=S256
+   ```
+
+6. **`GET /canva/v1/callback`**: Canva returns with `code` and `state`. The endpoint:
+   - sanitises `state` to alphanumerics and looks up its transient; a miss returns *"Security check failed. Invalid state."*
+   - **deletes** the transient, so the state is single-use
+   - reads the matching `code_verifier`
+   - POSTs to `https://api.canva.com/rest/v1/oauth/token` with `grant_type=authorization_code`, the `code`, the `redirect_uri` and the `code_verifier`, authenticating with HTTP Basic `base64(client_id:client_secret)`
+   - stores the returned `refresh_token` in the `canva_refresh_token` option
+
+### Later runs: silent refresh
+
+`/auth` finds `canva_refresh_token` set, POSTs `grant_type=refresh_token` to the same token endpoint, receives a new access token, and goes **straight to the design**. The consent screen is skipped entirely.
+
+> 💡 PKCE is what makes this safe. Even if an authorization code were intercepted, it cannot be exchanged without the `code_verifier`, which never leaves your server.
+
+---
+
+## Flow 2: Creating the design
+
+With an access token in hand, the plugin caches it as `canva_token_{post_id}` for **one hour**, then:
+
+### Step A: Reopen an existing design
+
+If the product carries a `_canva_design_id` post meta, the plugin fetches `GET /rest/v1/designs/{id}`. On HTTP 200 with a usable `edit_url`, it caches `canva_design_{post_id}` and redirects straight into that design. **Nothing is recreated, and no previous work is lost.**
+
+### Step B: Upload the current image as an asset
+
+For a product with no stored design and an existing featured image:
+
+1. The file is read through the WordPress filesystem abstraction (`WP_Filesystem`), not `file_get_contents()`.
+2. It is POSTed to `https://api.canva.com/rest/v1/asset-uploads` as `application/octet-stream`, with the filename base64-encoded in the `Asset-Upload-Metadata` header.
+3. The returned job is polled at `GET /rest/v1/asset-uploads/{job_id}`, up to **15 attempts, 2 seconds apart**, so up to 30 seconds.
+4. On `success`, the resulting `asset_id` is carried into design creation, which places the current product image on the canvas.
+
+A failed or timed-out upload is not fatal, the design is simply created empty.
+
+### Step C: Dynamic dimension matching
+
+The canvas size is resolved in strict order:
+
+| Priority | Source                                             | Notes                                                                                      |
+|----------|----------------------------------------------------|--------------------------------------------------------------------------------------------|
+| 1        | `wp_get_attachment_image_src( $image_id, 'full' )` | The product's featured image at full size                                                  |
+| 2        | `wc_get_image_size( 'woocommerce_single' )`        | Used when the product has no image; a zero height falls back to the width, giving a square |
+| 3        | `1080 × 1080`                                      | Final fallback                                                                             |
+
+This is what keeps designs from being stretched or cropped when they come back, the canvas matches the slot the image is going into.
+
+### Step D: Create and redirect
+
+```json
+{
+  "design_type": { "type": "custom", "width": 1200, "height": 1200 },
+  "title": "Product Image - Travis Scott x Air Jordan 1 Low",
+  "asset_id": "MAF…"
+}
+```
+
+is POSTed to `https://api.canva.com/rest/v1/designs`. The returned design ID is saved to `_canva_design_id` on the product, which is what makes reopening and product-context lookup work, and the admin is redirected to the design's `edit_url`.
+
+If the response has no `edit_url`, the plugin stops with *"Failed to create design: …"* and the raw response, so the cause is visible.
+
+---
+
+## Flow 3: The Canva app authenticating back
+
+The app never sees your Client Secret. Instead, for every request it calls Canva's `getDesignToken()` and sends the result as a bearer token:
+
+```http
+Authorization: Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6…
+```
+
+Your store verifies it in five steps:
+
+1. **Extract** the token from the header. Missing or malformed → **401**.
+2. **Read the `aud` claim** from the payload (taking the first entry when it is an array).
+3. **Compare `aud` to your saved App ID.** A mismatch → **401** *"Invalid App ID (aud)."*
+4. **Fetch Canva's public keys** from `https://api.canva.com/rest/v1/apps/{appId}/jwks`, cached for one hour in the `canva_jwks_{app_id}` transient.
+5. **Verify the RS256 signature** with `firebase/php-jwt`, which also enforces `exp` and `nbf`. Failure → **401** *"Invalid token."*, logged to the WooCommerce logger under the `wkwc-canva-connect` source.
+
+The decoded token is then attached to the request as `decoded_token`, which is how `/context` reads the `designId` claim.
+
+> ⚠ **Step 3 only runs when the App ID field is filled in.** Leave it empty and any validly signed Canva token is accepted, including one from an app you do not control.
+
+### Why CORS matters here
+
+The app's iframe is served from `https://app-{app-id}.canva-apps.com`, so every call is cross-origin and preflighted. The plugin answers those preflights for the `canva/v1` namespace only, removing core's own CORS headers first so exactly one `Access-Control-Allow-Origin` goes out, two values is a hard browser error.
+
+`Authorization` is listed explicitly in `Access-Control-Allow-Headers`, because a `*` wildcard there does **not** cover it, and every call from the app carries a bearer token.
+
+---
+
+## Flow 4: Saving the design back
+
+1. The app calls `requestExport({ acceptedFileTypes: ['jpg','png','gif'] })`.
+2. Each exported page's blob URL is fetched and appended to a `FormData` as `images[]`, named `design-page-{n}.{ext}`, alongside the target `product_id`.
+3. The form is POSTed to `POST /canva/v1/update-product-image` with the bearer token.
+4. The store validates the token, then loops the uploaded files through `media_handle_sideload()`, attaching each to the product. Files with an upload error are skipped and their temp copies deleted.
+5. `set_post_thumbnail()` assigns the attachment as the product's featured image (or updates the variation image).
+6. `{ "success": true }` is returned, and the sidebar refetches the catalogue and the design context.
+
+---
+
+## Flow 5: Returning to WordPress
+
+`GET /canva/v1/return` finds the most recent `_transient_canva_token_%` option, derives the post ID from its name, clears the token and design transients, and redirects to `wp-admin/post.php?post={id}&action=edit`.
+
+With no active session it answers *"No active session found."*, the design is still safe in Canva, and clicking *Design with Canva* again reopens it.
+
+---
+
+## Data stored on your site
+
+| Key                             | Type      | Lifetime  | Holds                            |
+|---------------------------------|-----------|-----------|----------------------------------|
+| `canva_app_id`                  | option    | permanent | Your Canva App ID                |
+| `canva_client_id`               | option    | permanent | Your Canva Client ID             |
+| `canva_client_secret`           | option    | permanent | Your Canva Client Secret         |
+| `wkwc_disable_cors`             | option    | permanent | The Disable CORS Headers switch  |
+| `canva_refresh_token`           | option    | permanent | OAuth refresh token              |
+| `_canva_design_id`              | post meta | permanent | The design ID for that product   |
+| `canva_state_{state}`           | transient | 300 s     | Product ID for one OAuth attempt |
+| `canva_code_verifier_{post_id}` | transient | 300 s     | PKCE verifier                    |
+| `canva_token_{post_id}`         | transient | 1 h       | Access token for the session     |
+| `canva_design_{post_id}`        | transient | 1 h       | Design ID for the session        |
+| `canva_jwks_{app_id}`           | transient | 1 h       | Cached Canva public keys         |
+
+---
+
+<!-- source: https://wpdoc.webkul.com/woocommerce-canva-connector/documentation/troubleshooting.html -->
+
+# Troubleshooting
+
+Symptoms grouped by where in the workflow they appear, each with the cause and the fix.
+
+---
+
+## Quick reference
+
+| Category           | Problem                                  | Solution                                                                                                  |
+|--------------------|------------------------------------------|-----------------------------------------------------------------------------------------------------------|
+| **Installation**   | Plugin will not activate                 | Activate WooCommerce first, the plugin refuses to run without it                                         |
+| **Installation**   | *JWT library not found.* (500)           | Run `composer install` in the plugin directory                                                            |
+| **Installation**   | REST routes return 404                   | Re-save permalinks at *Settings > Permalinks*                                                             |
+| **Installation**   | Activation notice in the site footer     | Activate the purchase code at *Webkul WC Addons > License*                                                |
+| **Installation**   | No *Webkul WC Addons* menu               | Submodules are missing, use *Settings > Canva Connect*, or run `git submodule update --init --recursive` |
+| **Connection**     | *Client ID not set.* (400)               | Save the Client ID in *Webkul WC Addons > Canva Connect*                                                  |
+| **Connection**     | Canva rejects the redirect URI           | Re-copy the Redirect URI from the settings page, it must match byte for byte                             |
+| **Connection**     | *Security check failed. Invalid state.*  | The 300-second state expired; restart from *Design with Canva*                                            |
+| **Connection**     | CSRF / security error on the button      | Click the button from a freshly loaded product page, it needs a live `wp_rest` nonce                     |
+| **Authentication** | *Invalid App ID (aud).* (401)            | The App ID in WordPress must exactly match the App the bundle was built for                               |
+| **Authentication** | *Failed to get access token*             | Wrong Client Secret, or a mismatched `redirect_uri` at the token exchange                                 |
+| **Frontend**       | *Failed to load products*                | The store must be reachable over HTTPS from the Canva iframe                                              |
+| **Frontend**       | Blank sidebar in Canva                   | Rebuild with the correct `CANVA_BACKEND_HOST` and re-upload `dist/app.js`                                 |
+| **Frontend**       | Multiple-values CORS error               | Your web server is adding its own `Access-Control-Allow-Origin`                                           |
+| **Uploads**        | Design saves but the image never changes | `wp-content/uploads` must be writable by the web server                                                   |
+| **Uploads**        | Only page 1 arrived                      | WordPress blocked the other MIME types                                                                    |
+| **Return**         | *No active session found.*               | The one-hour session expired; reopen the product                                                          |
+
+---
+
+## Installation problems
+
+### The plugin will not activate
+
+WordPress refuses activation while WooCommerce is inactive, showing *"Webkul Canva Connect for Woocommerce needs WooCommerce. Activate WooCommerce first, then activate this plugin."* This is enforced twice, by the `Requires Plugins: woocommerce` header and by the plugin's own activation hook.
+
+**Fix:** install and activate WooCommerce 10.0 or later, then activate this plugin.
+
+### *JWT library not found.*: HTTP 500
+
+The `firebase/php-jwt` dependency is missing, so no token can be verified and the Canva sidebar stays empty.
+
+**Fix:**
+
+```bash
+cd wp-content/plugins/wkwc-canva-connect
+composer install --no-dev --optimize-autoloader
+```
+
+Confirm `vendor/autoload.php` now exists. This only affects Git checkouts, the store ZIP ships with `vendor/` included.
+
+### A licence notice appears in the site footer
+
+Every installed Webkul module must be activated with a valid purchase code. Until that is done, WordPress shows a mandatory activation notice in the site footer and the storefront checkout is blocked.
+
+**Fix:** go to **Webkul WC Addons > License**, enter the **Purchase Code** for *WooCommerce Canva Connector*, and confirm the **Status** column reads *Approved*. Full steps are in [Installation, Step 5](https://wpdoc.webkul.com/woocommerce-canva-connector/documentation/installation.html#step-5---activate-the-license).
+
+### The settings page is not where the docs say
+
+The page registers under **Webkul WC Addons > Canva Connect** when the Webkul submodules are present, and falls back to **Settings > Canva Connect** when they are not.
+
+**Fix (Git checkouts):**
+
+```bash
+git submodule update --init --recursive
+```
+
+Either location works, the page is identical. Access needs the `manage_woocommerce` capability.
+
+### REST routes return 404
+
+```bash
+curl -I https://your-domain.com/wp-json/canva/v1/products
+```
+
+A **401** is healthy, the route exists and is demanding a token. A **404** means the rewrite rules were never flushed.
+
+**Fix:** go to *Settings > Permalinks*, choose **Post name**, and click **Save Changes**.
+
+---
+
+## Connection and OAuth problems
+
+### *Client ID not set.*: HTTP 400
+
+```json
+{ "code": "no_key", "message": "Client ID not set.", "data": { "status": 400 } }
+```
+
+**Fix:** paste the Client ID (`OC-…`) from your Canva **Integration** into *Webkul WC Addons > Canva Connect* and save.
+
+### Canva rejects the redirect URI
+
+The URI registered on the Canva Integration must match `rest_url( 'canva/v1/callback' )` **byte for byte**. A trailing slash, `http` instead of `https`, or `www.` on one side only is enough to fail.
+
+**Fix:** copy the value printed under *Important URLs to paste in your Canva Developer Portal* on your settings page, never type it by hand. See [Redirect URIs & HTTPS](https://wpdoc.webkul.com/woocommerce-canva-connector/documentation/configuration-redirect-uris.html).
+
+### *Security check failed. Invalid state.*
+
+The `state` transient lives for **300 seconds**, and is deleted the moment it is used.
+
+Causes: more than five minutes spent on the consent screen; a reloaded or bookmarked callback URL; or an object cache that is dropping transients.
+
+**Fix:** go back to the product and click *Design with Canva* again. If it recurs immediately, check that transients persist, a misconfigured persistent object cache is the usual culprit.
+
+### CSRF / security error on the button
+
+The button link carries a `wp_rest` nonce, which expires after roughly 24 hours.
+
+**Fix:** reload the product edit page (or the products list) and click the button from the fresh page. Clicking a link copied out of an old tab will not work.
+
+### *Failed to get access token*
+
+The token exchange at `https://api.canva.com/rest/v1/oauth/token` was rejected.
+
+Check, in order:
+
+1. The **Client Secret** in WordPress matches the current secret in the Developer Portal. Rotating it in Canva invalidates the stored copy.
+2. The **Redirect URI** sent at the exchange matches the registered one exactly.
+3. Your server can make **outbound HTTPS** requests to `api.canva.com`, a firewall or proxy blocking egress produces this too.
+
+### The consent screen appears every time
+
+The refresh token is not being persisted in the `canva_refresh_token` option.
+
+**Fix:** confirm the option is writable (some hardened setups block `update_option` from REST context), and check the WooCommerce logs under **WooCommerce > Status > Logs**, source `wkwc-canva-connect`.
+
+---
+
+## Canva app problems
+
+### *Failed to load products. Please check if your WordPress site is accessible.*
+
+The sidebar reached the fetch but the request did not succeed. Work through these in order:
+
+**1: Is the store on HTTPS?** The Canva editor is HTTPS, so a browser blocks any request to an `http://` origin as mixed content. This is not fixable from the plugin side; the store must have a valid certificate.
+
+**2: Was the bundle built with the right host?** `CANVA_BACKEND_HOST` is compiled into the JavaScript. It must be the site root, with no trailing slash and no `/wp-json`:
+
+```bash
+CANVA_BACKEND_HOST=https://your-domain.com npm run build
+```
+
+For a subdirectory install, include the subdirectory path: `https://your-domain.com/store`.
+
+**3: Does the App ID match?** Open the browser devtools console in the Canva editor. A **401** with *"Invalid App ID (aud)."* means the App ID saved in WordPress is not the App the token was issued for.
+
+**4: Is the certificate chain complete?**
+
+```bash
+curl -sS -o /dev/null -w '%{http_code} %{ssl_verify_result}\n' \
+  https://your-domain.com/wp-json/canva/v1/products
+```
+
+Expect `401 0`. A non-zero `ssl_verify_result` means an incomplete chain, install the intermediate certificates.
+
+### Blank sidebar in Canva
+
+The bundle failed to load or failed to execute.
+
+**Fix:** rebuild with `npm run build` and re-upload `dist/app.js` in the Developer Portal. Check the devtools console for the actual error, a build that stopped with *"BACKEND_HOST is undefined."* never produced a bundle at all.
+
+### CORS: *header contains multiple values, but only one is allowed*
+
+Two layers are both sending `Access-Control-Allow-Origin`. The plugin already removes WordPress core's copy, so the second one is coming from your **web server**, an Apache `Header always add`, an Nginx `add_header`, or a server-level "allow CORS" plugin.
+
+**Diagnose:** request a plain static file.
+
+```bash
+curl -I https://your-domain.com/wp-includes/js/jquery/jquery.min.js | grep -i access-control
+```
+
+If the header is present on a static asset, WordPress never ran, the source is the web server.
+
+**Fix, either** remove the CORS rule from the server configuration, **or** tick **Disable CORS Headers** in *Webkul WC Addons > Canva Connect* so PHP stops sending its own. The plugin still sends `Access-Control-Allow-Headers`, `Access-Control-Allow-Methods` and `Access-Control-Max-Age`, which matters because hand-written server CORS blocks usually omit `Authorization` and would reject every bearer token.
+
+Equivalent in code:
+
+```php
+add_filter( 'wkwc_canva_allowed_origin', '__return_empty_string' );
+```
+
+### *⚠️ Select an image on canvas first to replace it!*
+
+Not an error. Clicking a sidebar thumbnail replaces a **selected** image on the canvas, so something must be selected first.
+
+**Fix:** click the image on the canvas (Canva draws a border around it), then click the thumbnail.
+
+### No *✨ Current Product* section
+
+The app could not match the open design to a product. Either the design was not created through *Design with Canva*, or the `_canva_design_id` post meta is missing.
+
+**Fix:** close the design and reopen it from the product's *Design with Canva* button. The catalogue below still works either way, you can save to any product from its own card.
+
+---
+
+## Save and upload problems
+
+### The design saves but the product image never changes
+
+`media_handle_sideload()` could not write the file.
+
+**Fix:** make `wp-content/uploads` writable by the web server user.
+
+```bash
+chown -R www-data:www-data wp-content/uploads
+find wp-content/uploads -type d -exec chmod 755 {} \;
+find wp-content/uploads -type f -exec chmod 644 {} \;
+```
+
+Also confirm disk space, and that `upload_max_filesize` and `post_max_size` in PHP are large enough for the image export.
+
+### *❌ Failed to Save!* immediately
+
+The Canva export never completed, or returned no valid image.
+
+**Fix:** make sure the canvas has content, then click again. Check the browser devtools console for the underlying export error.
+
+---
+
+## Return navigation problems
+
+### *No active session found.*
+
+The `canva_token_{post_id}` transient lives for **one hour**. Returning after that finds no session.
+
+**Fix:** nothing is lost. Close the tab, reopen the product in WordPress, and click *Design with Canva*, the stored `_canva_design_id` reopens the same design.
+
+### Returning lands on the wrong product
+
+The return endpoint infers the product from the **most recent** session transient, not from the request. With two designs open at once, both return buttons resolve to whichever session was started last.
+
+**Fix:** work on one design at a time, or navigate to the correct product manually in WordPress.
+
+---
+
+## Diagnostic commands
+
+**Are the routes registered?**
+
+```bash
+curl -I https://your-domain.com/wp-json/canva/v1/products
+# expect: HTTP/2 401
+```
+
+**Is HTTPS valid end to end?**
+
+```bash
+curl -sS -o /dev/null -w 'status=%{http_code} tls=%{ssl_verify_result}\n' \
+  https://your-domain.com/wp-json/canva/v1/callback
+# expect: status=200 tls=0
+```
+
+**Which CORS headers actually go out?**
+
+```bash
+curl -sI -X OPTIONS https://your-domain.com/wp-json/canva/v1/products \
+  -H 'Origin: https://app-example.canva-apps.com' | grep -i access-control
+# expect exactly one Access-Control-Allow-Origin line
+```
+
+**Are the credentials saved?**
+
+```bash
+wp option get canva_app_id
+wp option get canva_client_id
+wp option get canva_refresh_token
+```
+
+**What is the plugin logging?**
+JWT verification failures are written to the WooCommerce logger under the source `wkwc-canva-connect`. Read them at **WooCommerce > Status > Logs**.
+
+---
+
+## Still stuck?
+
+🎟 **Support Portal** [https://webkul.uvdesk.com](https://webkul.uvdesk.com)
+
+📧 Email: [support@webkul.com](mailto:support@webkul.com)
+
+Include your WordPress and WooCommerce versions, the PHP version, the exact error message, and the relevant lines from **WooCommerce > Status > Logs**.
+
+---
+
+<!-- source: https://wpdoc.webkul.com/woocommerce-canva-connector/documentation/faq.html -->
+
+# FAQ
+
+Common questions about **WooCommerce Canva Connector**.
+
+---
+
+## Setup
+
+### Do I need a licence key, and where do I enter it?
+
+Yes. Enter the **Purchase Code** that came with your order at **Webkul WC Addons > License**, in the *WooCommerce Canva Connector* row of the **Module License** table. The **Status** column turns *Approved* once it is accepted.
+
+Leaving a module unactivated makes WordPress show a permanent activation notice in the site footer, and blocks checkout on the storefront. See [Installation, Step 5](https://wpdoc.webkul.com/woocommerce-canva-connector/documentation/installation.html#step-5---activate-the-license).
+
+### Do I need a paid Canva plan?
+
+No. A free Canva account can create a Developer account and build apps. Some *design features* inside the editor are Pro-only, but the integration itself is not.
+
+### Why do I need both an App and an Integration?
+
+They do different jobs. The **App** is the React sidebar that runs inside the Canva editor, authenticated with a JWT. The **Integration** is the OAuth2 client your WordPress server uses to create and read designs through the Connect API. Neither can do the other's work, so both are required.
+
+See [Canva Developer Portal](https://wpdoc.webkul.com/woocommerce-canva-connector/documentation/canva-developer-portal.html).
+
+### Can I run this on plain HTTP?
+
+No. Canva rejects OAuth redirects to `http://` URLs, and the Canva editor is served over HTTPS so a browser blocks the app's requests to an insecure origin as mixed content. A valid certificate is a hard requirement.
+
+See [Redirect URIs & HTTPS](https://wpdoc.webkul.com/woocommerce-canva-connector/documentation/configuration-redirect-uris.html).
+
+### Can I test this on localhost?
+
+Not directly. `http://localhost` and XAMPP-style setups without TLS will not work. Expose the site through a public HTTPS tunnel and use that hostname as both the Redirect URI and `CANVA_BACKEND_HOST`, Canva's servers need to reach your callback.
+
+### Do I have to build the React app myself?
+
+Yes, at least once. `CANVA_BACKEND_HOST` is compiled into the JavaScript at build time, so the bundle has to be built against your own store URL and uploaded to your own Canva App.
+
+See [Build the Canva App](https://wpdoc.webkul.com/woocommerce-canva-connector/documentation/canva-app-build.html).
+
+### What happens if I leave the App ID empty?
+
+The integration still works, but you lose an important security check: the `aud` comparison only runs when the field has a value. With it blank, any Canva app holding a validly signed token is accepted. **Fill it in.**
+
+---
+
+## Usage
+
+### Where is the Design with Canva button?
+
+In two places: the **Design with Canva** meta box in the right-hand column of the product edit screen, and a purple **Design with Canva** row action on **Products > All Products**. Both open in a new tab.
+
+### Why does Canva ask for permission only the first time?
+
+The plugin stores the refresh token returned by Canva and exchanges it for a fresh access token on every later design, bypassing the consent screen. That is expected behaviour, not a bug.
+
+### Does my design get lost if I close the tab?
+
+No. The design lives in your Canva account like any other, and its ID is stored on the product. Clicking *Design with Canva* again reopens the same design.
+
+What you lose by closing without saving is only the *transfer* to WooCommerce, click **Save Design to Store** to push it across.
+
+### Why is my canvas already the right size?
+
+The plugin reads your product's featured image dimensions and creates the canvas to match, falling back to your theme's `woocommerce_single` image size, then to 1080 × 1080. That is what stops designs coming back stretched or cropped.
+
+### Why is my product image already on the canvas?
+
+Before creating the design, the plugin uploads the current featured image to Canva as an asset and places it on the new canvas, so you start from what the product already looks like.
+
+### Can I use this on blog posts too?
+
+Yes. The meta box is registered for the `post` type as well as `product`. The Canva sidebar's product features will not apply, but the design and save flow works.
+
+### Can I attach one design to several products?
+
+Yes. Each product card in the sidebar has its own *Save Design to Store* button, and each saves to that card's product. Search for the next product and click its button, no need to leave the editor.
+
+### Can I save to a specific variation?
+
+Yes. Choose the variation in the card's **Select Variation** dropdown; the save then targets that variation's own ID instead of the parent product. Grouped products work the same way through their children.
+
+### What image formats are supported?
+
+The plugin exports and saves standard high-resolution web image formats: **PNG**, **JPG/JPEG**, and **GIF** (including animated GIF).
+
+### Why does clicking a thumbnail do nothing?
+
+You need to select an image on the canvas first, that is the frame the thumbnail replaces. With nothing selected the app shows *"⚠️ Select an image on canvas first to replace it!"*.
+
+### How many products does the sidebar show?
+
+Up to **50 published products** per query. Use the search box, by name or SKU, to narrow it down. There is no pagination.
+
+---
+
+## Permissions and security
+
+### Who can use the integration?
+
+Anyone with the `edit_products` capability can start a design; the settings page needs `manage_woocommerce`. Administrators and Shop Managers have both by default.
+
+The plugin also grants the built-in **Editor** role the full set of WooCommerce product capabilities, so Editors can use Canva Connect too. As part of that, the default *Posts*, *Media* and *Pages* menus are hidden from Editors, the content is not deleted, only the menu entries are removed. See [Installation → Admin menu and role changes](https://wpdoc.webkul.com/woocommerce-canva-connector/documentation/installation.html#admin-menu-and-role-changes).
+
+### Is my Client Secret exposed to the Canva app?
+
+No. The secret never leaves your server. It is used only in the server-to-server token exchange with Canva. The app authenticates with a Canva-issued JWT and knows nothing about your OAuth credentials.
+
+### How is the OAuth flow protected?
+
+With **PKCE**. A random `code_verifier` is generated per attempt and never leaves your server; only its SHA-256 hash is sent to Canva. An intercepted authorization code is useless without the verifier. A single-use, server-side `state` transient guards against replay.
+
+### Can anyone call the plugin's REST endpoints?
+
+The CORS policy is permissive by default (`Access-Control-Allow-Origin: *`), but every product endpoint demands a valid Canva RS256 JWT whose `aud` matches your App ID. CORS is not the access control here, the token is. You can narrow the origin with the `wkwc_canva_allowed_origin` filter.
+
+### Are old images deleted when I save a new one?
+
+No. The previous image stays in the Media Library, unattached rather than deleted, so a save can never destroy an image you still needed. Clean up from **Media > Library** when you are sure.
+
+---
+
+## Compatibility
+
+### Does it work with WooCommerce HPOS?
+
+Yes. Compatibility with High-Performance Order Storage is declared explicitly, so no incompatibility warning appears.
+
+### Does it work with variable and grouped products?
+
+Yes. Variations and grouped children both appear in the sidebar's **Select Variation** dropdown, with their own name, price, SKU and description, and saving targets the selected entry.
+
+### Is the plugin translatable?
+
+Yes. All strings use the `wkwc-canva-connect` text domain, and a `.pot` file ships in the `languages/` directory.
+
+### What versions are supported?
+
+| Software             | Requires | Tested up to |
+|----------------------|----------|--------------|
+| WordPress            | 6.7      | 6.9          |
+| WooCommerce          | 10.0     | 10.4         |
+| PHP                  | 7.4      | 8.4          |
+| Node.js (build only) | 18       | 20.10.0      |
+
+---
+
+## Support
+
+### Where do I get help?
+
+🎟 **Support Portal** [https://webkul.uvdesk.com](https://webkul.uvdesk.com)
+
+📧 Email: [support@webkul.com](mailto:support@webkul.com)
+
+> ⚠ Production version is provided by default
+> Development version available at extra cost
+
+### Where can I try the plugin first?
+
+- **[Live Demo](https://wp-canva-connect.wcdemo.webkul.com/)**: Experience the plugin in action.
+- **[Buy Now](https://store.webkul.com/woocommerce-canva-connector.html)**: Purchase the plugin from the Webkul store.
+- **[License Activation Guide](https://wpdoc.webkul.com/license-validator/)**: Step-by-step instructions on activating your plugin license.
+- **[Get Support](https://webkul.uvdesk.com/en/customer/create-ticket/)**: Need assistance? Create a ticket and our support team will help you ASAP.
+
+### What should I include in a ticket?
+
+Your WordPress, WooCommerce and PHP versions, the exact error message, whether it happened in WordPress or in the Canva sidebar, and the relevant lines from **WooCommerce > Status > Logs** (source `wkwc-canva-connect`).
+
+Before opening a ticket, it is worth walking through [Troubleshooting](https://wpdoc.webkul.com/woocommerce-canva-connector/documentation/troubleshooting.html), most issues are a Redirect URI mismatch, a missing HTTPS certificate, or a bundle built against the wrong `CANVA_BACKEND_HOST`.
