@@ -71,7 +71,7 @@
 
 :root {
   --back-to-top-z-index: 5;
-  --back-to-top-icon: url(/canva-connect/assets/img/back-to-top.00dcb9fa.svg);
+  --back-to-top-icon: url(/woocommerce-canva-connector/assets/img/back-to-top.00dcb9fa.svg);
   --back-to-top-bg-color: #fff;
   --back-to-top-color: #3eaf7c;
   --back-to-top-icon-color: currentColor;
@@ -242,7 +242,7 @@ body:not(.copy-code-disabled) div[class*=language-]:hover .vp-copy-code-button {
   padding: 0 0.5rem 0 2rem;
   outline: none;
   transition: all ease 0.3s;
-  background: var(--search-bg-color) url(/canva-connect/assets/img/search.b017a09f.svg) 0.6rem 0.5rem no-repeat;
+  background: var(--search-bg-color) url(/woocommerce-canva-connector/assets/img/search.b017a09f.svg) 0.6rem 0.5rem no-repeat;
   background-size: 1rem;
 }
 @media (max-width: 719px) {
